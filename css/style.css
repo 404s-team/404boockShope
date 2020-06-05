@@ -13,6 +13,7 @@
 #heroTitle{
     font-size: 250%;
     margin-bottom: 2%;
+    width: fit-content;
 }
 #divHeroTitle button{
     position: relative;
@@ -24,7 +25,7 @@
 #divHeroTitle{
     top: 10%;
     position: relative;
-    left: 20%;
+    margin-left: 20%;
 }
 #navHeader{
 background-color: gray;
@@ -40,5 +41,44 @@ background-color: gray;
     background-color: greenyellow;
     margin-left: 1%;
 }
+.navOptions a{
+    text-decoration: none;
+}
 /************main************/
+#divBestBooks{
+    position: relative;
+    height: 350px;
+    width: 50%;
+    background-color: red;
+    margin-top: 2%;
+    left: 25%;
+    overflow-y: hidden;
+}
+.devBestBook{
+    position: relative;
+    float: left;
+    margin-left: 1%;
+}
+#divBooks{
+    background-color: red;
+    margin-top: 2%;
+    height: 1100px;
+    overflow-y: scroll;
+}
+.divBook{
+    float: left;
+    margin: 1.5% 3%;
+}
+.imgBestBook{
+    float: top;
+}
+.bookName{
+    font-size: 150%;
+}
+.autherName{
+    font-size: 80%;
+}
+b{
+    font-weight: bold;
+}
 /*************footer***********/
