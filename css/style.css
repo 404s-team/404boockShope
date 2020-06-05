@@ -1,0 +1,44 @@
+/************dimensions******************/
+/***********header*************/
+#divHeroImg{
+    background-image: url(https://placehold.it/1024x450/ddd);
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    margin: 1%;
+}
+#heroTitle{
+    font-size: 250%;
+    margin-bottom: 2%;
+}
+#divHeroTitle button{
+    position: relative;
+    left: 25%;
+    margin-top: 4%;
+    width: 102.4px;
+    height: 45px;
+}
+#divHeroTitle{
+    top: 10%;
+    position: relative;
+    left: 20%;
+}
+#navHeader{
+background-color: gray;
+}
+#navHeader ul{
+    display: block;
+    padding: 1.5%;
+    margin-left: 35%;
+}
+.navOptions{
+    display: inline;
+    padding: 1% 2%;
+    background-color: greenyellow;
+    margin-left: 1%;
+}
+/************main************/
+/*************footer***********/
