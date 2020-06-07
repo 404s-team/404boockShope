@@ -253,6 +253,8 @@ background-color: gray;
 }
 .imgBestBook{
     float: top;
+    width: 200px;
+    height: 250px;
 }
 .bookName{
     font-size: 150%;
