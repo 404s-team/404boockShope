@@ -241,15 +241,22 @@ background-color: gray;
     margin-left: 1%;
 }
 #divBooks{
-    background-color: red;
+    /* background-color: red; */
     margin-top: 2%;
     height: 1100px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+    margin: 2%;
     
+}
+#divBooks:hover{
+    overflow-y: scroll;
+    margin: 2% 1%;
 }
 .divBook{
     float: left;
     margin: 1.5% 3%;
+    margin-left: 47px;
 }
 .imgBestBook{
     float: top;
