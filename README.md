@@ -1,4 +1,4 @@
 # 404_Team Book Shop Project
 
->  Boock Shop project managment board 
-![Our Boock Shop PM](https://github.com/404s-team/404boockShope/projects/1)
+>  Book Shop project managment board 
+> ![PM](https://github.com/404s-team/404boockShope/projects/1)
