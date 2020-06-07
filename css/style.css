@@ -81,4 +81,31 @@ background-color: gray;
 b{
     font-weight: bold;
 }
-/*************footer***********/
+.bookDetails{
+    margin-left: 4%;
+}
+/*************footer*************/
+#navFooter{
+    display: flex;
+    background-color: gray;
+}
+#divSocialMedia{
+    display: flex;
+    margin: 3%;
+}
+.socialMedia{
+    margin-left: 20%;
+    height: 100%;
+    width: 100%;
+}
+#divFooterLogo{
+    margin: 1%;
+}
+#divFooterLinks{
+    margin: 3%;
+    margin-left: 50%;
+    width: 15%;
+}
+#divFooterLinks a{
+    margin-left: 6%;
+}
