@@ -1,0 +1,31 @@
+/* header */
+nav{
+    background-color: gray;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav img{
+    float: left;
+    display: block;
+    margin:  20px;
+       
+}
+nav h1{
+    float: left;
+    width: 200px;
+    margin:30px 300px 30px 300px;
+    display: block;
+    text-align: center;
+    
+}
+nav a{
+    float: left;
+    margin:  16px 20px 16px 330px ;
+    padding: 20px;
+    text-decoration: none;
+    color: honeydew;
+    font-weight: bolder;
+   
+      
+}
