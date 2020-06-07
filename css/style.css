@@ -264,7 +264,7 @@ background-color: gray;
     height: 300px;
 }
 .bookName{
-    font-size: 15px;
+    font-size: 110%;
     font-weight: bold;
     margin: 5% 0px;
 }
