@@ -261,13 +261,18 @@ background-color: gray;
 .imgBestBook{
     float: top;
     width: 200px;
-    height: 250px;
+    height: 300px;
 }
 .bookName{
-    font-size: 150%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5% 0px;
 }
 .autherName{
     font-size: 80%;
+}
+.price{
+    margin-top: 5%;
 }
 b{
     font-weight: bold;
