@@ -16,7 +16,9 @@ body{
 #headerDetail img {
     float: left;
     display: block;
-    margin: 20px;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
 
 }
 
@@ -142,8 +144,10 @@ body{
 #recommended {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
     margin: 20px auto;
+    overflow-y: scroll;
+    height: 280px;
    
     
 }
