@@ -1,35 +1,39 @@
 /* header */
- header nav {
+#headerDetail nav {
     background-color: gray;
     width: 100%;
     overflow: hidden;
 }
 
-header nav img {
+#headerDetail img {
     float: left;
     display: block;
     margin: 20px;
 
 }
 
-header nav h1 {
+#headerDetail h1 {
     float: left;
-    width: 200px;
-    margin: 30px 300px 30px 300px;
+    margin: 33px 300px 30px 3px;
     display: block;
     text-align: center;
 
 }
 
-header nav a {
-    float: left;
-    margin: 16px 20px 16px 330px;
-    padding: 20px;
+#headerDetail a {
+    float: right;
+    padding:20px;
+    margin-top: 20px;
+
+    margin-right: 20px;
     text-decoration: none;
     color: honeydew;
     font-weight: bolder;
+}
 
-
+#headerDetail a:hover {
+    color: white;
+    background-color: black;
 }
 
 #choosed {
@@ -54,14 +58,14 @@ header nav a {
 }
 
 
-#bookDetails h2 {
+#bookName {
     color: blueviolet;
     font-family: fantasy;
     font-size: 20px;
 
 }
 
-#bookDetails p {
+#bookDisc {
 
     margin-top: 325px;
 
@@ -70,7 +74,7 @@ header nav a {
 
 #submit {
     display: block;
-    margin-left: 25%;
+    margin-left: 24.5%;
     margin-top: 20px;
     background-color: rgba(182, 55, 38, 0.63);
     color: white;
@@ -79,17 +83,18 @@ header nav a {
     border-style: none;
 }
 
-#avilable{
+#avilable {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
 
-#exbooks{
+#recommended {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#exbooks img{
+
+#recommended img {
     margin-left: 5px;
 }
