@@ -28,12 +28,29 @@
                 <li class="navOptions"><a href="">Kids</a></li>
             </ul>
         </nav> -->
-
+        <nav class="topHeader">
+            <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
+            <a href="index.html"><h1>Shelves of Books</h1></a>
+            <ul class="headerList">
+                <li><a href="">home</a></li>
+                <div class="dropdown">
+                    <li class="dropbtn">Categories</li>
+                    <div class="dropdown-content">
+                    <a href="#">All</a>
+                    <a href="#">History</a>
+                    <a href="#">Horror</a>  
+                    <a href="#">Fantacy</a>  
+                    <a href="#">Kids</a>
+                    </div>
+                  </div>
+                <li><a href="" class="drop">Exchange</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+        </nav>
 
         <div class="heroImg">
             <div class="heroSlides slide">
-                <div class="logo"><img id='logo' src="https://placehold.it/200x70/ddd" /></div>
-                <img src="img/hero2.jpg" alt="" style="width: 100%;">
+                <img src="img/hero2.jpg" alt="" style="width: 100%;" class="heroImg">
                 <div class="quet">
                     <div class="content">
                         <h1>“I have always imagined that Paradise will be a kind of library.”</h1>
@@ -45,8 +62,7 @@
                 </div>
             </div>
             <div class="heroSlides slide">
-                <div class="logo"><img id='logo' src="https://placehold.it/200x70/ddd" /></div>
-                <img src="img/hero0.jpg" alt="" style="width: 100%;">
+                <img src="img/hero0.jpg" alt="" style="width: 100%;" class="heroImg">
                 <div class="quet">
                     <div class="content">
                         <h1>“I have always imagined that Paradise will be a kind of library.”</h1>
@@ -58,8 +74,7 @@
                 </div>
             </div>
             <div class="heroSlides slide">
-                <div class="logo"><img id='logo' src="https://placehold.it/200x70/ddd" /></div>
-                <img src="img/hero1.jpg" alt="" style="width: 100%;">
+                <img src="img/hero1.jpg" alt="" style="width: 100%;" class="heroImg">
                 <div class="quet">
                     <div class="content">
                         <h1>“I have always imagined that Paradise will be a kind of library.”</h1>
@@ -102,7 +117,7 @@
                 <li class="navOptions"><a href="">Kids</a></li>
             </ul>
         </nav>  -->
-        <nav id="navHeader" class="category">
+        <!-- <nav id="navHeader" class="category">
             <ul>
                 <li><a id="liAll" href="">All</a></li>
                 <li><a id="liHistory" href="">History</a></li>
@@ -110,7 +125,7 @@
                 <li><a id="liFantacy" href="">Fantacy</a></li>
                 <li><a id="liKids" href="">Kids</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <div id="divAllBooks">
             <div id="divBestBooks">
                 <p id="ptopThree">Our 3 top books</p>
@@ -119,8 +134,8 @@
                         <img id="imgBest1" class="imgBestBook" src="bookCovers/davinci-code-1.jpg" alt="">
                     </a>
                     <div class="bookDetails">
-                        <p class="bookName">BookName</p>
-                        <p class="autherName">Ahmad Shela</p>
+                        <p class="bookName">Davinci Code</p>
+                        <p class="autherName">Dan Brown</p>
                         <p class="price">20$</p>
                     </div>
 
@@ -130,8 +145,8 @@
                         <img id="imgBest2" class="imgBestBook" src="bookCovers/theSinning.jpg" alt="">
                     </a>
                     <div class="bookDetails">
-                        <p class="bookName">BookName</p>
-                        <p class="autherName">Ahmad Shela</p>
+                        <p class="bookName">The Shinning</p>
+                        <p class="autherName">Stephen King</p>
                         <p class="price">20$</p>
                     </div>
                 </div>
@@ -141,11 +156,20 @@
                     </a>
                     <div class="bookDetails">
                         <p class="bookName">Loard Of the Rings</p>
-                        <p class="autherName">Ahmad Shela</p>
+                        <p class="autherName">J.R.R Tolkien</p>
                         <p class="price">20$</p>
                     </div>
                 </div>
             </div>
+            <nav id="navHeader" class="category">
+                <ul>
+                    <li><a id="liAll" href="">All</a></li>
+                    <li><a id="liHistory" href="">History</a></li>
+                    <li><a id="liHorror" href="">Horror</a></li>
+                    <li><a id="liFantacy" href="">Fantacy</a></li>
+                    <li><a id="liKids" href="">Kids</a></li>
+                </ul>
+            </nav>
             <div id="divBooks">
                 <!-- <div class="divBook">
                     <img class="imgBestBook" src="https://placehold.it/200x250/ttt" alt="">
@@ -285,7 +309,7 @@
                 <img class="socialMedia" src="https://github.com/AhmedShela/chocolatePizza/blob/master/images/twit-icon.png?raw=true" alt="">
             </div>
         </nav> -->
-        <img id='Footerlogo' src="https://placehold.it/200x70/ddd" />
+        <img id='Footerlogo' src="img/logo.png" />
         <h3></h3>
         <nav class="links">
             <ul>
@@ -301,7 +325,7 @@
             </ul>
         </nav>
         <hr>
-        <p>Shelves Of Books &copy; 2020 &middot; All Copyrights are saved</p>
+        <p>Shelves Of Books &copy; 2020 &middot; All Copyrights are reserved</p>
     </footer>
     <script src="js/multipleFunctions.js"></script>
     <script src="js/style.js"></script>
