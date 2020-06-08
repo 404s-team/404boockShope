@@ -1,4 +1,55 @@
 /********Maim/*/
-#inputs input{
+#userName, #Email, #BookName, #auther{
     display: block;
+    margin-bottom: 20px;
+    width: 140%;
+    height: 35px;
+    border-radius: 30px;
+    border: solid gray;
+    padding-left: 15px;
+    outline: 0;
+}
+#btnSubmit{
+    position: relative;
+    clear: both;
+    width: 150px;
+    height: 40px;
+    left:75px;
+    top: 20px;
+    
+}
+#BookDisc{
+    width: 300px;
+    height: 155px;
+    outline: 0;
+    border: solid gray;
+    resize: none;
+}
+#inputs{
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    top: 0px;
+}
+/* #divChoosed{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    margin-right: 50px;
+    float: left;
+} */
+#exchangeForm{
+    display: inline-block;
+    margin-top: 7% ;
+    margin-left: 12%;
+}
+#divMain{
+    display: block;
+}
+#imageHolder{
+    display: inline;
+}
+fieldset{
+    /* margin: 0 auto; */
 }

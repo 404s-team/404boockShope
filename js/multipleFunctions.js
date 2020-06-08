@@ -91,9 +91,9 @@ function mainRender(){
         var name = document.createElement('p');
         var author = document.createElement('p');
         var price = document.createElement('p');
-        bookCard.appendChild(name);
-        bookCard.appendChild(author);
-        bookCard.appendChild(price);
+        bookDetails.appendChild(name);
+        bookDetails.appendChild(author);
+        bookDetails.appendChild(price);
         name.setAttribute('class','bookName');
         author.setAttribute('class','autherName');
         price.setAttribute('class','price');
