@@ -1,4 +1,5 @@
 var bookDetails;
+console.log('ALL: '+Book.all);
 
 function renderDetails(){
 bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
@@ -17,6 +18,7 @@ bookDisc.textContent = bookDetails.bookDescription;
 renderDetails();
 
 //Creat recommended books
+var recommendedContainer=document.getElementById('recommended');
 function renderRecommended() {
     
     for(var i=0; i<booksArr.length;i++){
@@ -25,16 +27,29 @@ function renderRecommended() {
         if(array[4] === bookDetails.bookType){
             console.log(i);
             
-            var recommendedContainer=document.getElementById('recommended');
             var link = document.createElement('a');
             link.setAttribute('href','details.html')
             recommendedContainer.appendChild(link);
             var recommendedImg = document.createElement('img');
             link.appendChild(recommendedImg);
             // recommendedImg.setAttribute('class','imgBestBook');
-            // recommendedImg.setAttribute('id',Book.all[i].bookId)
+            recommendedImg.setAttribute('id',array[6])
             recommendedImg.setAttribute('src',`${array[2]}`);
         }
     }
 };
 renderRecommended();
+
+
+recommendedContainer.addEventListener('click', imgClickHandler);
+function imgClickHandler(event){
+    var clickedBook;
+    if (event.target != recommendedContainer){
+        if(event.target.id){
+            console.log('id '+event.target.id);
+        clickedBook = Book.all[event.target.id]
+    }
+}
+console.log( Book.all[event.target.id])
+// localStorage.setItem('clickedBook',JSON.stringify(clickedBook))
+}
