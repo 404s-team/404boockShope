@@ -1,4 +1,6 @@
+'user strict';
 mainRender();
+storExBooks();
 // console.log(Book.all);
 
 var container = document.getElementById('divBooks');
