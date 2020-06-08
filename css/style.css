@@ -45,26 +45,31 @@ background-color: gray;
     text-decoration: none;
 }  */
 
-#hero img{
+#hero img {
     height: 500px;
 }
-.logo{
+
+.logo {
     padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 0;
 }
-#hero #logo{
+
+#hero #logo {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin: 20px 25px;
 }
-.hero{
+
+.hero {
     max-width: 1000px;
     position: relative;
-    margin: auto;     
+    margin: auto;
 }
-.prev, .next {
+
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     /* top: 50%; */
@@ -78,13 +83,17 @@ background-color: gray;
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
+
 .quet {
     color: #f2f2f2;
     font-size: 15px;
@@ -94,65 +103,74 @@ background-color: gray;
     height: 100px;
     margin: 635px 500px;
 }
-.content{
+
+.content {
     background-color: #050505;
     opacity: .75;
     width: 450px;
     padding: 50px;
     margin: 80px 0;
 }
-.quet h1{
+
+.quet h1 {
     color: #f5f5f5;
     font-size: 35px;
     width: 375px;
     text-align: justify;
     padding: 30px;
 }
-.quet p{
+
+.quet p {
     color: #f5f5f5;
     font-size: 15px;
     width: 375px;
     text-align: justify;
     padding: 0px 30px 15px 30px;
 }
-.exLink{
+
+.exLink {
     width: 200px;
     opacity: .8;
     margin: 30px 0;
     padding: 0 175px;
     margin-top: -50px;
 }
-.button{
+
+.button {
     border: none;
     width: 200px;
     background-color: #050505;
     opacity: .8;
-    border-radius: 10px; 
+    border-radius: 10px;
     text-align: center;
     padding: 5px;
     /* margin: 280px 0; */
 }
-.exLink .button a{
+
+.exLink .button a {
     color: #f5f5f5;
     font-size: 30px;
     text-decoration: none;
 }
-.exLink .button:hover{
+
+.exLink .button:hover {
     /* transition-delay: 2s;
     transition-property: background-color;
     background-color: orange; */
     background-color: #8b8b8b;
-  cursor: pointer;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-    
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+
 }
-.dots{
+
+.dots {
     text-align: center;
     margin-top: -28px;
 }
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -162,44 +180,64 @@ background-color: gray;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-} 
-.active, .dot:hover {
+}
+
+.active,
+.dot:hover {
     background-color: #717171;
-} 
-.slide{
+}
+
+.slide {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-}  
+}
+
 @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-} 
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-} 
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 /************main************/
-.category{
+.category {
     padding: 30px 350px;
     margin: 50px;
     background-color: #050505;
     opacity: .8;
-} 
-.category ul{
-    padding: 0 138px;
-    width: 470px;
 }
-.category ul li{
+
+.category ul {
+    padding: 0 155px;
+    width: 410px;
+}
+
+.category ul li {
     display: inline-block;
     font-size: 30px;
     margin-left: 15px;
 }
-.category ul li a{
+
+.category ul li a {
     color: #f5f5f5;
     text-decoration: none;
 }
+
 /* .category:hover{
     padding: 30px 330px;
 }
@@ -220,13 +258,13 @@ background-color: gray;
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }*/
-.category ul li a:hover{
+.category ul li a:hover {
     opacity: .8;
     color: #ddd;
     border-radius: 10px;
-} 
+}
 
-#divBestBooks{
+#divBestBooks {
     position: relative;
     height: 485px;
     width: 50%;
@@ -235,7 +273,8 @@ background-color: gray;
     left: 25%;
     overflow-y: hidden;
 }
-.devBestBook{
+
+.devBestBook {
     position: relative;
     float: left;
     padding: 3% 24px;
@@ -246,7 +285,8 @@ background-color: gray;
     padding: 15px 282px;
 
 }
-#divBooks{
+
+#divBooks {
     margin-top: 2%;
     height: 1100px;
     /* overflow-y: scroll; */
@@ -254,16 +294,19 @@ background-color: gray;
     margin: 5% 2%;
     
 }
-#divBooks:hover{
+
+#divBooks:hover {
     overflow-y: scroll;
     margin: 5% 1%;
 }
-.divBook{
+
+.divBook {
     float: left;
     margin: 1.5% 3%;
     margin-left: 42px;
 }
-.imgBestBook{
+
+.imgBestBook {
     float: top;
     width: 200px;
     height: 300px;
@@ -272,7 +315,8 @@ background-color: gray;
     border-radius: 3%;
     box-shadow: 1px 1px 5px 0px rgba(117,117,117,1);
 }
-.imgBestBook:hover{
+
+.imgBestBook:hover {
     cursor: pointer;
     box-shadow: 1px 1px 5px 0px rgba(117,117,117,1);
     transform: scale(0.96);
@@ -283,18 +327,23 @@ background-color: gray;
     font-weight: bold;
     margin: 5% 0px;
 }
-.autherName{
+
+.autherName {
     font-size: 80%;
 }
-.price{
+
+.price {
     margin-top: 5%;
 }
-b{
+
+b {
     font-weight: bold;
 }
-.bookDetails{
+
+.bookDetails {
     margin-left: 4%;
 }
+
 /*************footer*************/
 /* #navFooter{
     display: flex;
@@ -321,52 +370,63 @@ b{
     margin-left: 6%;
 } */
 /***********/
-footer{
+footer {
     background-color: black;
     opacity: .85;
     height: 180px;
 }
-#Footerlogo{
+
+#Footerlogo {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin: 20px 50px;
 }
-.links{
+
+.links {
     padding: 0 665px;
     width: 188px;
     margin-top: -70px;
 }
-.links ul li{
-    display: inline-block; margin-right: 10px;
+
+.links ul li {
+    display: inline-block;
+    margin-right: 10px;
 }
-.links ul li a{
+
+.links ul li a {
     color: #f5f5f5;
     font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
 }
-.social{
+
+.social {
     margin-top: 20px;
     padding-bottom: 20px;
 }
-.social ul{
+
+.social ul {
     float: right;
     margin-top: -50px;
     margin-right: 50px;
 }
-.social ul li{
+
+.social ul li {
     display: inline-block;
     margin-left: 10px;
 }
-.social img{
+
+.social img {
     height: 30px;
     width: 30px;
 }
-hr{
+
+hr {
     width: 95%;
 }
-footer p{
+
+footer p {
     color: #f5f5f5;
     text-align: center;
     text-transform: capitalize;
