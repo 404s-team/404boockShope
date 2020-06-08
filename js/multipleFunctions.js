@@ -32,11 +32,11 @@ var booksArr = [
     ['Jean Angel','Atul Mohite','bookCovers/scinceBooks/JeanAngel.jpg','44','Fantasi','16'],
     ['Raavan','Amish Tripathi','bookCovers/scinceBooks/Raavan.jpg','33','Fantasi','','17'],
     /**Kids */
-    ['Computer Security','Dieter Gollmann','bookCovers/kidsBooks/ComputerSecurity.jpg','78','Kids','','18'],
-    ['Lead Generation','Dayna Rothman','bookCovers/KidsBooks/LeadGenerationforDummies.jpg','70','Kids','','19'],
-    ['Pattern Writing','Wonder House Books','bookCovers/KidsBooks/PatternWriting.jpg','30','Kids','','20'],
-    ['The Blue Umbrella','Ruskin Bond','bookCovers/KidsBooks/TheBlueUmbrella.jpg','10','Kids','','21'],
-    ['Grandmas Bag','Sudha Murty','bookCovers/KidsBooks/GrandmasBagofStories.jpg','11','Kids','','22'],
+    ['Computer Security','Dieter Gollmann','../bookCovers/KidsBooks/ComputerSecurity.jpg','78','Kids','','18'],
+    ['Lead Generation','Dayna Rothman','../bookCovers/KidsBooks/LeadGenerationforDummies.jpg','70','Kids','','19'],
+    ['Pattern Writing','Wonder House Books','../bookCovers/KidsBooks/PatternWriting.jpg','30','Kids','','20'],
+    ['The Blue Umbrella','Ruskin Bond','../bookCovers/KidsBooks/TheBlueUmbrella.jpg','10','Kids','','21'],
+    ['Grandmas Bag','Sudha Murty','../bookCovers/KidsBooks/GrandmasBagofStories.jpg','11','Kids','','22'],
 ];
 var img ;
 var bookTypeVar = 'all';
