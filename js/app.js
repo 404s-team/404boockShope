@@ -32,3 +32,23 @@ function bestImgClickHandler(){
 console.log(book)
 localStorage.setItem('clickedBook',JSON.stringify(book))
 }
+var filterNav = document.getElementById('navHeader');
+filterNav.addEventListener('click',filterCat);
+function filterCat(){
+    event.preventDefault();
+if (event.target != filterNav){
+    if(event.target.id == 'liAll'){
+        bookTypeVar = 'all'
+    }else if(event.target.id == 'liHistory'){
+        bookTypeVar = 'History'
+    }else if(event.target.id == 'liHorror'){
+        bookTypeVar = 'hurror'
+    }else if(event.target.id == 'liFantacy'){
+        bookTypeVar = 'Fantasi'
+    }else if(event.target.id == 'liKids'){
+        bookTypeVar = 'Kids'
+    }
+    console.log(event.target.id);
+    mainRender();
+}
+}
