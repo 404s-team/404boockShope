@@ -10,7 +10,7 @@ body {
     /* background-image: url(https://i.pinimg.com/564x/8a/4e/1e/8a4e1e8d6b340da246f22c5fac5b655e.jpg); */
 }
 main{
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     
 
@@ -80,8 +80,8 @@ main{
 
 #choosed {
     overflow: hidden;
-    margin: 40px auto;
-    width: 90%;
+    margin: 40px 0 40px 40px;
+    /* width: 90%; */
 }
 
 #choosed img {
@@ -105,9 +105,25 @@ main{
 #bookDetails {
 
     float: left;
-    margin: 20px 20px 20px 50px;
+    margin: 20px 10px 20px 20px;
     padding: 20px;
-    width: 50%;
+    width: 40%;
+}
+aside{
+    float: right;
+    /* border: 1px solid rgb(92, 89, 89); */
+    height: 500px;
+    width: 20%;
+    margin: 20px 10px 0 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+aside h3{
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
+
 }
 
 
@@ -143,9 +159,9 @@ main{
     /* margin-top: 325px; */
 }
 
-#submit {
+#submit,#read {
     /* display: block; */
-    /* margin: 50px 19%; */
+    margin: 10px ;
     background-color:orange;
     /* color: white;
     width: 150px;
@@ -179,7 +195,7 @@ main{
     position: absolute;
     left: 0;
     top: 0; */
-    transform: translate(-100%, 0), rotate(10deg);
+    /* transform: translate(-100%, 0), rotate(10deg); */
     transform-origin: top left;
     transition: .2s;
     transform: ease-out;
