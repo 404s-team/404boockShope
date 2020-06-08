@@ -1,0 +1,33 @@
+main{
+    padding: 100px;
+}
+.about{
+    width: 945px;
+    height: 300px;
+}
+.about .member{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    float: left;
+}
+.about h1{
+    padding: 50px 285px;
+    font-size: 45px;
+    padding-bottom: 28px;
+}
+.about p{
+    padding: 0 285px;
+    padding-bottom: 15px;
+    width: 400px;
+}
+.about img{
+background-color: rgb(26, 26, 26);
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+.about .links0{
+    padding: 0 282px;
+    width: 400px;
+}
