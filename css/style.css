@@ -250,12 +250,19 @@ background-color: gray;
 #divBooks{
     margin-top: 2%;
     height: 1100px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+    margin: 2%;
     
+}
+#divBooks:hover{
+    overflow-y: scroll;
+    margin: 2% 1%;
 }
 .divBook{
     float: left;
     margin: 1.5% 3%;
+    margin-left: 47px;
 }
 .imgBestBook{
     float: top;
@@ -274,10 +281,15 @@ background-color: gray;
 
 }
 .bookName{
-    font-size: 150%;
+    font-size: 110%;
+    font-weight: bold;
+    margin: 5% 0px;
 }
 .autherName{
     font-size: 80%;
+}
+.price{
+    margin-top: 5%;
 }
 b{
     font-weight: bold;
