@@ -10,7 +10,7 @@ body {
     /* background-image: url(https://i.pinimg.com/564x/8a/4e/1e/8a4e1e8d6b340da246f22c5fac5b655e.jpg); */
 }
 main{
-    /* width: 90%; */
+    width: 95%;
     margin: 0 auto;
     
 
@@ -125,7 +125,22 @@ aside h3{
     box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
 
 }
+aside #sponsor{
+    margin: 50px 20px 50px 20px;
+}
+aside #motivation{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    vertical-align: middle;
+    height: max-content;
+    margin: 50% 5px;
 
+}
+aside #sponsorHead{
+    font-weight: bolder;
+    font-size: large;
+}
 
 #bookName {
     color: rgb(0, 0, 0);
