@@ -44,6 +44,7 @@ background-color: gray;
 .navOptions a{
     text-decoration: none;
 }  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
 
 #hero img {
     height: 500px;
@@ -112,12 +113,13 @@ background-color: gray;
     margin: 80px 0;
 }
 
+
 .quet h1 {
     color: #f5f5f5;
     font-size: 35px;
-    width: 375px;
-    text-align: justify;
     padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
 .quet p {
@@ -126,6 +128,8 @@ background-color: gray;
     width: 375px;
     text-align: justify;
     padding: 0px 30px 15px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 .exLink {
@@ -151,6 +155,8 @@ background-color: gray;
     color: #f5f5f5;
     font-size: 30px;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 .exLink .button:hover {
@@ -223,8 +229,8 @@ background-color: gray;
 }
 
 .category ul {
-    padding: 0 155px;
-    width: 410px;
+    padding: 0 135px;
+    width: 500px;
 }
 
 .category ul li {
@@ -236,6 +242,7 @@ background-color: gray;
 .category ul li a {
     color: #f5f5f5;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* .category:hover{
@@ -324,16 +331,21 @@ background-color: gray;
 
 .bookName{
     font-size: 120%;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin: 5% 0px;
 }
 
 .autherName {
     font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 .price {
     margin-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 b {
@@ -399,6 +411,8 @@ footer {
     font-size: 18px;
     text-decoration: none;
     text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 .social {
@@ -431,4 +445,7 @@ footer p {
     text-align: center;
     text-transform: capitalize;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
 }
