@@ -9,12 +9,15 @@
     padding-left: 15px;
     outline: 0;
 }
+#choosedImg{
+    margin-right: 40px;
+}
 #btnSubmit{
     position: relative;
     clear: both;
     width: 150px;
     height: 40px;
-    left:75px;
+    left:85px;
     top: 20px;
     
 }
