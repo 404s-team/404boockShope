@@ -14,7 +14,6 @@ var booksArr = [
     ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','1$','hurror','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error, beatae saepe harum eligendi, aperiamvel molestiae laboriosam alias ex quasi ipsa nobis at repellat reiciendis sapiente laborum! Fugit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus blanditiis id error corporis beatae, impedit reprehenderit laudantium nesciunt fuga!','1'],
     ['The Text','Claire Douglas','bookCovers/hororBooks/TheText.jpg','10$','hurror','','2'],
     ['And the Sea',' Michael Lister','bookCovers/hororBooks/AndtheSeaBecameBlood.jpg','12$','hurror','','3'],
-    ['The Rape Trial','Bidisha Ghosal','bookCovers/hororBooks/TheRapeTrial.jpg','17$','hurror','','4'],
     ['A Killer Thriller','Nick Stephenson and Ryan King','bookCovers/hororBooks/AKillerThrillerCollection.jpg','50$','hurror','','5'],
     ['The Adventure','Agatha Christie','bookCovers/hororBooks/TheAdventureoftheChristmas.jpg','46$','hurror','','6'],
     ['The Girl in Room 105','by Chetan Bhagat','bookCovers/hororBooks/TheGirlinRoom105.jpg','31$','hurror','','7'],
@@ -32,12 +31,6 @@ var booksArr = [
     ['Jean Angel','Atul Mohite','bookCovers/scinceBooks/JeanAngel.jpg','44$','Fantasi','16'],
     ['Raavan','Amish Tripathi','bookCovers/scinceBooks/Raavan.jpg','33$','Fantasi','','17'],
     /**Kids */
-    // ['Computer Security','Dieter Gollmann','../bookCovers/KidsBooks/ComputerSecurity.jpg','78','Kids','','18'],
-    // ['Lead Generation','Dayna Rothman','../bookCovers/KidsBooks/LeadGenerationforDummies.jpg','70','Kids','','19'],
-    // ['Pattern Writing','Wonder House Books','../bookCovers/KidsBooks/PatternWriting.jpg','30','Kids','','20'],
-    // ['The Blue Umbrella','Ruskin Bond','../bookCovers/KidsBooks/TheBlueUmbrella.jpg','10','Kids','','21'],
-    // ['Grandmas Bag','Sudha Murty','../bookCovers/KidsBooks/GrandmasBagofStories.jpg','11','Kids','','22'],
-
     ['Learn to Write','Crystal Radke','bookCovers/kidsBooks/myFirstLearntoWrite.jpg','78$','Kids','','18'],
     ['Teach Your Dragon','Steve Herman','bookCovers/kidsBooks/TeachYourDragon.jpg','70$','Kids','','19'],
     ['The Giving Tree','Shel Silverstein','bookCovers/kidsBooks/theGivinTree.jpg','30$','Kids','','20'],
