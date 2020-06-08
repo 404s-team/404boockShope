@@ -39,6 +39,7 @@ var booksArr = [
     ['Grandmas Bag','Sudha Murty','bookCovers/KidsBooks/GrandmasBagofStories.jpg','11','Kids','','22'],
 ];
 var img ;
+var bookTypeVar = 'all';
 function addBooks(){
     for (let i = 0; i < booksArr.length; i++) {
         var book = new Book(
@@ -53,15 +54,25 @@ function addBooks(){
         Book.all.push(book);
     }
     var path = String(Book.all[0].bookCover);
-    console.log('path : ',booksArr[0][2]);
+    // console.log('path : ',booksArr[0][2]);
 }
 function mainRender(){
-    addBooks();
+    if (Book.all.length){
+        
+    }else{addBooks();}
+    
     // console.log(Book.all);
     var path ='';
+    var container = document.getElementById('divBooks');
+
+    while(container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+
+    console.log(bookTypeVar);
     for (let i = 0; i < Book.all.length; i++) {
+        if (Book.all[i].bookType == bookTypeVar || bookTypeVar == 'all'){
         path = String(Book.all[i].bookCover);
-        var container = document.getElementById('divBooks');
         var bookCard = document.createElement('div');
         container.appendChild(bookCard);
         bookCard.setAttribute('class','divBook');
@@ -89,5 +100,7 @@ function mainRender(){
         name.textContent = Book.all[i].bookName;
         author.textContent = Book.all[i].bookauthor;
         price.textContent = Book.all[i].bookPrice;
+        }
+        
     }
 }
