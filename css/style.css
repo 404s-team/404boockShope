@@ -188,8 +188,8 @@ background-color: gray;
     opacity: .8;
 } 
 .category ul{
-    padding: 0 155px;
-    width: 410px;
+    padding: 0 138px;
+    width: 470px;
 }
 .category ul li{
     display: inline-block;
@@ -228,7 +228,7 @@ background-color: gray;
 
 #divBestBooks{
     position: relative;
-    height: 427px;
+    height: 485px;
     width: 50%;
     background-color: rgb(218, 218, 218);
     margin-top: 2%;
@@ -238,13 +238,12 @@ background-color: gray;
 .devBestBook{
     position: relative;
     float: left;
-    margin-top: 2%;
-    margin-left: 4%;
+    padding: 3% 24px;
 }
 #ptopThree{
-    margin-top: 2%;
-    margin-left: 35%;
     font-size: 170%;
+    font-weight: bold;
+    padding: 15px 282px;
 
 }
 #divBooks{
@@ -252,36 +251,35 @@ background-color: gray;
     height: 1100px;
     /* overflow-y: scroll; */
     overflow: hidden;
-    margin: 2%;
+    margin: 5% 2%;
     
 }
 #divBooks:hover{
     overflow-y: scroll;
-    margin: 2% 1%;
+    margin: 5% 1%;
 }
 .divBook{
     float: left;
     margin: 1.5% 3%;
-    margin-left: 47px;
+    margin-left: 42px;
 }
 .imgBestBook{
     float: top;
-    width: 205px;
-    height: 255px;
+    width: 200px;
+    height: 300px;
     border: solid gray;
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
-    box-shadow: 15px -7px 13px rgb(145, 143, 143);
+    box-shadow: 1px 1px 5px 0px rgba(117,117,117,1);
 }
 .imgBestBook:hover{
     cursor: pointer;
-    box-shadow: 10px -5px 13px rgb(80, 80, 80);
+    box-shadow: 1px 1px 5px 0px rgba(117,117,117,1);
     transform: scale(0.96);
 }
 
-}
 .bookName{
-    font-size: 110%;
+    font-size: 120%;
     font-weight: bold;
     margin: 5% 0px;
 }
