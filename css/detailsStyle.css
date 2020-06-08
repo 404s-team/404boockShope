@@ -2,6 +2,18 @@
 
 body {
     /* font-family: cursive; */
+    background-repeat: no-repeat;
+    /* background-size: 300px 300px; */
+    /* background-image: url(https://media.istockphoto.com/vectors/books-sketch-seamless-vector-id594484448?k=6&m=594484448&s=612x612&w=0&h=a67hFSIILzjjuDuTfNrqDnoRRwEhe2rGkgEvV_js80k=); */
+    /* background-image: url(https://render.fineartamerica.com/images/rendered/default/poster/8/8/break/images/artworkimages/medium/1/seamless-book-pattern-background-wallpaper-diego-schtutman.jpg); */
+    /* opacity: 0.01; */
+    /* background-image: url(https://i.pinimg.com/564x/8a/4e/1e/8a4e1e8d6b340da246f22c5fac5b655e.jpg); */
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    
+
 }
 
 #headerDetail {
@@ -10,7 +22,7 @@ body {
 }
 
 #headerDetail nav {
-    background-color: gray;
+    background-color: #14213dff;
     width: 100%;
     overflow: hidden;
 }
@@ -46,7 +58,7 @@ body {
     /* box-shadow: 0 0 10px black; */
 }
 
-#headerDetail a {
+#link {
     float: right;
     padding: 20px;
     margin-top: 20px;
@@ -69,17 +81,19 @@ body {
 #choosed {
     overflow: hidden;
     margin: 40px auto;
-    width: 80%;
+    width: 90%;
 }
 
 #choosed img {
 
-    margin: 20px 0 20px 20px;
+    margin: 20px 0 20px 0px;
     float: left;
     border: solid gray;
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
     box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
+    height: 500px;
+    width: 400px;
 }
 
 #choosed img:hover {
@@ -130,20 +144,20 @@ body {
 }
 
 #submit {
-    display: block;
-    margin: 50px 19%;
-    /* background-color: rgba(182, 55, 38, 0.63);
-    color: white;
+    /* display: block; */
+    /* margin: 50px 19%; */
+    background-color:orange;
+    /* color: white;
     width: 150px;
     height: 50px;
     border-style: none;
     box-shadow: 0 0 5px black; */
-    border: 2px solid currentColor;
+    /* border: 2px solid currentColor; */
     border-radius: 20px;
-    color: orange;
+    color: #14213dff;
     /* font-family: roboto; */
-    font-size: 30px;
-    /* font-weight: 20px; */
+    font-size: large;
+    font-weight: bold;
     overflow: hidden;
     padding: 15px 15px;
     /* position :relative; */
@@ -190,7 +204,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* width: 80%; */
-    background-color: rgb(172, 172, 172);
+    background-color: #14213dff;
     box-shadow: 0 0 10px black;
 }
 
@@ -206,9 +220,9 @@ body {
 #recommended {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 72%;
+    width: 90%;
     margin: 20px auto;
-    overflow-y: scroll;
+    /* overflow: hidden; */
     height: 280px;
 
 
@@ -218,6 +232,8 @@ body {
     margin-left: 10px;
     opacity: 1;
     margin: 10px 5px;
+    height: 250px;
+    width: 200px;
 
 }
 

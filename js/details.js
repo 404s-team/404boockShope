@@ -29,7 +29,7 @@ function renderRecommended() {
     //Show in Recomendation part the same type of choosen book, but if there is not any, show all books
 
     var numBooks=0;
-    for (var i = 0; i < booksArr.length; i++) {
+    for (var i = 0; i < 5; i++) {
         var array = booksArr[i];
         console.log(bookDetails.bookType);
         if (array[4] === bookDetails.bookType) {
@@ -45,7 +45,7 @@ function renderRecommended() {
         };
     };
     if (numBooks < 1) {
-        for (var i = 0; i < booksArr.length; i++) {
+        for (var i = 0; i < 5; i++) {
             var array = booksArr[i];
             var link = document.createElement('a');
             link.setAttribute('href', 'details.html')
