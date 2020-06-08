@@ -5,7 +5,11 @@ console.log('ALL: ' + Book.all);
 // Render the Details page
 
 function renderDetails() {
-    bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
+    if (trans == 'download'){
+        bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
+    }else{
+        //get the exchangable book data from exchangeableBooks array
+    }
     var bookImg = document.getElementById('choosedImg');
     console.log(bookDetails.bookCover);
     bookImg.setAttribute('src', bookDetails.bookCover);
