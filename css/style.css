@@ -423,22 +423,40 @@ background-color: gray;
      overflow-y: hidden; 
     margin: 2% 1%;
 } */
-
-.divBook {
+/*old one*/
+/* .divBook {
     float: left;
     margin: 1.5% 3%;
     margin-left: 40px;
+} */
+/*new one*/
+.divBook {
+    float: left;
+    margin: 1.5% 2%;
+    margin-left: 40px;
+    border: solid gray;
+    border-radius: 10px;
 }
 
-.imgBestBook {
+/*old one*/
+/* .imgBestBook {
+    float: top;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 3%;
+    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
+} */
+/*new one*/
+ .imgBestBook {
     float: top;
     width: 200px;
     height: 300px;
     /* border: solid gray; */
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
-    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
-}
+    box-shadow: 7px 12px 5px 0px rgba(117, 117, 117, 1);
+} 
 
 .imgBestBook:hover {
     cursor: pointer;
@@ -472,12 +490,19 @@ background-color: gray;
     font-weight: bold;
 } */
 
+/*old one*/
+/* .bookDetails {
+    margin-left: 4%;
+    margin-top: 2px;
+    border-top: 2px solid #14213dff;
+} */
+/*new one*/
 .bookDetails {
     margin-left: 4%;
     margin-top: 2px;
     border-top: 2px solid #14213dff;
+    text-align: center;
 }
-
 /*************footer*************/
 /* #navFooter{
     display: flex;
