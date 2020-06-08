@@ -11,7 +11,7 @@ function Book(name, author, imgPath, price, type, description,id) {
 }
 var booksArr = [
     /**hurror */
-    ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','1','hurror','','1'],
+    ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','1','hurror','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error, beatae saepe harum eligendi, aperiamvel molestiae laboriosam alias ex quasi ipsa nobis at repellat reiciendis sapiente laborum! Fugit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus blanditiis id error corporis beatae, impedit reprehenderit laudantium nesciunt fuga!','1'],
     ['The Text','Claire Douglas','bookCovers/hororBooks/TheText.jpg','10','hurror','','2'],
     ['And the Sea',' Michael Lister','bookCovers/hororBooks/AndtheSeaBecameBlood.jpg','12','hurror','','3'],
     ['The Rape Trial','Bidisha Ghosal','bookCovers/hororBooks/TheRapeTrial.jpg','17','hurror','','4'],
