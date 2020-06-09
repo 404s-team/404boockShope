@@ -70,6 +70,14 @@ background-color: gray;
     position: relative;
     margin: auto;
 }
+.h1 a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: -10px;
+    color: wheat;
+
+}
 
 .prev,
 .next {
@@ -263,6 +271,7 @@ background-color: gray;
     margin-left: 130px;
     color: #f5f5f5;
     font-size: 30px;
+    text-decoration: none;
     text-transform: capitalize;
 }
 
