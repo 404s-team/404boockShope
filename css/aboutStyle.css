@@ -25,6 +25,7 @@ main{
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     width: 165px;
+    color: #fca311ff;
 }
 .about p{
     padding-bottom: 15px;
