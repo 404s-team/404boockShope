@@ -1,6 +1,7 @@
 'user strict';
 var btnSubmit = document.getElementById('btnSubmit');
 btnSubmit.addEventListener('click', addExBook);
+
 function addExBook(e) {
     e.preventDefault();
     trans = 'exChange';
@@ -11,12 +12,13 @@ function addExBook(e) {
     var bookImg = URL.createObjectURL(document.getElementById('imageHolder').files[0]);
     var newExBook = new Book(bookName, bookAuther, bookImg, '0', 'exchange', bookDisc, 'NewBook');
     var newExBookArray=[bookName,bookAuther, bookImg, '0', 'exchange', bookDisc, 'NewBook']
+    console.log('test'+document.getElementById('imageHolder').files[0].path);
 
     // var url = "details.html";
     // window.location(url);
     if (bookName && bookAuther && bookDisc && bookImg){
         
-        location.replace("details.html")
+        // location.replace("details.html")
         storExBooks()
         arrExBooksList.push(newExBook);
         exchangeableBooks.push(newExBookArray);
