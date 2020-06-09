@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/detailsStyle.css">
     <link rel="stylesheet" href="css/exchangForm.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 
     <title>Book Details</title>
 
@@ -40,25 +41,7 @@
                 <li><a href="about.html">about</a></li>
             </ul>
         </nav>
-        <!-- <nav class="topHeader">
-            <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
-            <a href="index.html"><h1>Shelves of Books</h1></a>
-            <ul class="headerList">
-                <li><a href="">home</a></li>
-                <div class="dropdown">
-                    <li class="dropbtn">Categories</li>
-                    <div class="dropdown-content">
-                    <a href="#">All</a>
-                    <a href="#">History</a>
-                    <a href="#">Horror</a>  
-                    <a href="#">Fantacy</a>  
-                    <a href="#">Kids</a>
-                    </div>
-                  </div>
-                <li><a href="" class="drop">Exchange</a></li>
-                <li><a href="">about</a></li>
-            </ul>
-        </nav> -->
+
     </header>
     <main>
         <form id="exchangeForm" action="" method="post">
@@ -66,31 +49,40 @@
                 <legend></legend>
                 <div id="divMain">
                     <!-- <div id="divChoosed"> -->
-                        <img id="choosedImg" src="https://placehold.it/300x400/ttt" alt="">
-                        
+                    <img id="choosedImg" src="https://placehold.it/300x400/ttt" alt="">
+
                     <!-- </div>  -->
                     <div id="inputs">
                         <input class="userData" placeholder="Your Name" id="userName" type="text" name="" id="">
                         <input class="userData" placeholder="Email" id="Email" type="text" name="" id="">
                         <input class="userData" placeholder="Book Name" id="BookName" type="text" name="" id="">
-                        <input  class="userData" placeholder="Auther Name" id="auther" type="text" name="" id="">
+                        <input class="userData" placeholder="Auther Name" id="auther" type="text" name="" id="">
                         <!-- <input class="userData" placeholder="Discreption" id="BookDisc" type="text" name="" id=""> -->
                         <textarea id="BookDisc" name="" id="" cols="30" rows="10"></textarea>
                     </div>
                 </div>
-                <input onchange="loadFile(event)" id="imageHolder" type="file" id="img" name="img" accept="image/*">
+                <!-- <input onchange="loadFile(event)" id="imageHolder" type="file" id="img" name="img" accept="image/*"> -->
+                <label class="file">
+                    <input  onchange="loadFile(event)" id="imageHolder" id="img" name="img" accept="image/*" type="file" id="file" aria-label="File browser example">
+                    <span class="file-custom"></span>
+                </label>
                 <script>
-                    var loadFile = function(event) {
+                    var loadFile = function (event) {
                         var image = document.getElementById('choosedImg');
                         image.src = URL.createObjectURL(event.target.files[0]);
                         image.style.width = '300px';
                         image.style.height = '400px';
                     };
                 </script>
-                <!-- <a href="details.html"> -->
-                    <button id="btnSubmit">Submit</button>
-                <!-- </a> -->
-                
+                <!-- <button id="btnSubmit" class="hvr-icon-up">Submit <i
+                        class="fa fa-arrow-circle-o-up hvr-icon"></i></button> -->
+                        <div class="btnSubmit">
+                            <div class="container">
+                                <div class="tick">
+                                </div>
+                            </div>
+                        </div>
+
 
             </fieldset>
         </form>

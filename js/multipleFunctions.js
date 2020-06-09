@@ -1,5 +1,6 @@
 'user strict';
 Book.all = [];
+var trans = 'download1';
 function Book(name, author, imgPath, price, type, description,id) {
     this.bookName = name;
     this.bookauthor = author;
@@ -45,6 +46,9 @@ var exchangeableBooks = [
 //     ['Raavan','Amish Tripathi','bookCovers/scinceBooks/Raavan.jpg','0$','Fantasi','','17'],
 //     ['Learn to Write','Crystal Radke','bookCovers/kidsBooks/myFirstLearntoWrite.jpg','0$','Kids','','18']
 ]
+function changeTrans(text){
+    trans = text;
+}
 var arrExBooksList = [] ;
 function storExBooks(){
     for (let i = 0; i < exchangeableBooks.length; i++) {
@@ -63,7 +67,6 @@ function storExBooks(){
 }
 var img ;
 var bookTypeVar = 'all';
-var trans;
 function addBooks(){
     for (let i = 0; i < booksArr.length; i++) {
         var book = new Book(
