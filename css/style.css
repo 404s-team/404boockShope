@@ -267,6 +267,8 @@ background-color: gray;
     float: right;
     padding: 10px 50px;
     margin-top: -28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 .topHeader .headerList li{
     display: inline-block;
