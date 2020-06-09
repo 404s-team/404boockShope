@@ -1,32 +1,55 @@
 main{
-    padding: 100px;
+    padding: 100px 38px;
 }
+.h1{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: #fca311ff;
+    text-transform: capitalize;
+}   
 .content1{
-    
+    height: 850px;
 }
 .about{
-    width: 945px;
+    float: left;
+    width: 650px;
     height: 300px;
+    margin: 50px 35px;
+    background-color: #f5f5f5;
+    box-shadow: 2px 2px 2px 2px #ddd;
 }
 .about .member{
+    background-color: white;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     float: left;
+    opacity: .9;
+    margin-top: 50px;
+    margin: 50px 15px;
+}
+.member:active{
+    width: 300px;
+    height: 300px;
 }
 .about h1{
-    padding: 28px 232px;
-    font-size: 30px;
-    padding-bottom: 28px;
+    font-size: 25px;
+    margin: 88px 232px;
+    margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    width: 165px;
+    color: #fca311ff;
 }
 .about p{
-    padding: 0 232px;
     padding-bottom: 15px;
+    margin: 0 232px;
     width: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+    text-align: justify;
 }
 .about img{
 background-color: rgb(26, 26, 26);
@@ -36,6 +59,6 @@ width: 30px;
 margin-right: 10px;
 }
 .about .links0{
-    padding: 0 232px;
+    margin: 0 232px;
     width: 400px;
 }
