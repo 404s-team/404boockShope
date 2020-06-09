@@ -21,7 +21,7 @@ function renderDetails() {
 
     var bookImg = document.getElementById('choosedImg');
     console.log('book URL: '+bookDetails.bookCover);
-    // bookImg.setAttribute('src', bookDetails.bookCover);
+    bookImg.setAttribute('src', bookDetails.bookCover);
     var bookTitle = document.getElementById('bookName');
     var bookWriter = document.getElementById('authorName');
     var bookPrice = document.getElementById('price');
