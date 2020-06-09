@@ -7,6 +7,7 @@ var container = document.getElementById('divBooks');
 container.addEventListener('click', imgClickHandler);
 function imgClickHandler(event){
     var clickedBook;
+    trans='download';
     if (event.target != container){
         if(event.target.id){
             console.log(event.target.id);
