@@ -10,7 +10,7 @@ function imgClickHandler(event){
     if (event.target != container){
         if(event.target.id){
             console.log(event.target.id);
-        clickedBook = Book.all[(event.target.id) -1]
+        clickedBook = Book.all[(event.target.id)-1]
     }
 }
 console.log(clickedBook)
