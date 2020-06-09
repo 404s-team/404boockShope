@@ -15,19 +15,33 @@
     <header id="headerDetail">
     </header>
     <main>
-        <form action="" method="post">
+        <form id="exchangeForm" action="" method="post">
             <fieldset>
                 <legend></legend>
-                <!-- <div id="choosed">
-                    <img id="choosedImg" src="" alt="">
-                    <input type="file" id="img" name="img" accept="image/*">
-                </div> -->
-                <div id="inputs">
-                    <input class="userData" id="userName" type="text" name="" id="">
-                    <input class="userData" id="Email" type="text" name="" id="">
-                    <input class="userData" id="BookName" type="text" name="" id="">
-                    <textarea class="userData" id="BookDisc" name="" id="" cols="30" rows="10"></textarea>
+                <div id="divMain">
+                    <!-- <div id="divChoosed"> -->
+                        <img id="choosedImg" src="https://placehold.it/300x400/ttt" alt="">
+                        
+                    <!-- </div>  -->
+                    <div id="inputs">
+                        <input class="userData" placeholder="Your Name" id="userName" type="text" name="" id="">
+                        <input class="userData" placeholder="Email" id="Email" type="text" name="" id="">
+                        <input class="userData" placeholder="Book Name" id="BookName" type="text" name="" id="">
+                        <input  class="userData" placeholder="Auther Name" id="auther" type="text" name="" id="">
+                        <!-- <input class="userData" placeholder="Discreption" id="BookDisc" type="text" name="" id=""> -->
+                        <textarea id="BookDisc" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
+                <input onchange="loadFile(event)" id="imageHolder" type="file" id="img" name="img" accept="image/*">
+                <script>
+                    var loadFile = function(event) {
+                        var image = document.getElementById('choosedImg');
+                        image.src = URL.createObjectURL(event.target.files[0]);
+                        image.style.width = '300px';
+                        image.style.height = '400px';
+                    };
+                </script>
+                <button id="btnSubmit">Submit</button>
                 
             </fieldset>
         </form>
@@ -36,6 +50,8 @@
 
     <footer>
     </footer>
+    <script src="js/multipleFunctions.js"></script>
+    <script src="js/exForm.js"></script>
 </body>
 
 </html>
