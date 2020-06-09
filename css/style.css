@@ -70,6 +70,14 @@ background-color: gray;
     position: relative;
     margin: auto;
 }
+.h1 a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: -10px;
+    color: wheat;
+
+}
 
 .prev,
 .next {
@@ -97,7 +105,7 @@ background-color: gray;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.quet {
+.quote {
     /* color: #f2f2f2;
     font-size: 15px;
     position: absolute;
@@ -122,7 +130,7 @@ background-color: gray;
 }
 
 
-.quet h1 {
+.quote h1 {
     color: #f5f5f5;
     font-size: 35px;
     padding: 30px;
@@ -130,7 +138,7 @@ background-color: gray;
     font-weight: bolder;
 }
 
-.quet p {
+.quote p {
     color: #f5f5f5;
     font-size: 15px;
     width: 375px;
@@ -141,12 +149,12 @@ background-color: gray;
 }
 
 .exLink {
-    width: 200px;
-    margin: 30px 0;
-    padding: 0 175px;
+    width: 142px;
+    padding: 0 205px;
     margin-top: -50px;
 }
-.button a{
+
+.button a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -166,6 +174,7 @@ background-color: gray;
     overflow: hidden;
     z-index: 1;
 }
+
 .button:after {
     content: '';
     position: absolute;
@@ -177,6 +186,7 @@ background-color: gray;
     border-radius: 10rem;
     z-index: -2;
 }
+
 .button:before {
     content: '';
     position: absolute;
@@ -189,6 +199,7 @@ background-color: gray;
     border-radius: 10rem;
     z-index: -1;
 }
+
 .button a:hover {
     color: #fca311ff;
 }
@@ -248,11 +259,6 @@ background-color: gray;
     }
 }
 
-.topHeader {
-    background-color: #14213dff;
-    height: 80px;
-}
-
 .topHeader .logo {
     height: 60px;
     width: 60px;
@@ -265,12 +271,140 @@ background-color: gray;
     margin-left: 130px;
     color: #f5f5f5;
     font-size: 30px;
+    text-decoration: none;
     text-transform: capitalize;
 }
 
-.topHeader a {
+/* .topHeader a {
     text-decoration: none;
+} */
+
+/* .topHeader .headerList {
+    float: right;
+    padding: 10px 50px;
+    margin-top: -28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
+
+.topHeader .headerList li {
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: capitalize;
+    margin-bottom: 29px;
+} */
+
+.topHeader .headerList a {
+    
+    color:#14213dff;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.dropdown-content a {
+    color: #14213dff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #14213dff;
+    color: #fca311ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topHeader .headerList li a:hover {
+    color: #fca311ff;
+}
+
+.topBotomBordersOut a:before,
+.topBotomBordersOut a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.topBotomBordersOut a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.topBotomBordersOut a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.topBotomBordersOut a:hover:before,
+.topBotomBordersOut a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+.droplist {
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;    
+}
+
+.droplist:hover {
+    color: #fca311ff;
+}
+
+.dropdown {
+    position: relative;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/* x */
+
+
+
+#hero {
+    background-color: #14213dff;
+    height: 80px;
+}
+
+#hero .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px 50px;
+}
+
+#hero .h1 {
+    margin-top: -58px;
+    margin-left: 130px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    width: 235px;
+}
+
+/* a {
+    text-decoration: none;
+    color: #f5f5f5;
+} */
 
 .topHeader .headerList {
     float: right;
@@ -290,7 +424,7 @@ background-color: gray;
     font-size: 18px;
 }
 
-.dropbtn {
+.droplist {
     color: white;
     border: none;
     cursor: pointer;
@@ -342,8 +476,7 @@ background-color: gray;
 }
 
 .category ul {
-    padding: 0 95px;
-    /* width: 500px; */
+    padding: -1 95px;
 }
 
 .category ul li {
@@ -352,44 +485,49 @@ background-color: gray;
     margin-left: 40px;
 }
 
-.category ul li a {
-    color: #f5f5f5;
+.category a {
+    color: #FFF;
     text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-/* .category:hover{
-    padding: 30px 330px;
-}
-.category ul:hover{
-    padding: 0 120px;
-}
-.category ul li:hover{
-    width: 150px;
-    text-align: center;
-    background-color: #f5f5f5;
-    font-size: 30px;
-    opacity: .8;
-    color: #050505;
-    border-radius: 10px;
-    cursor: pointer;
-  -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}*/
-.category ul li a:focus {
-    /* opacity: .8; */
+
+.category a:focus {
     color: #fca311ff;
     border-radius: 10px;
 }
+
+
+.pullUp a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.pullUp a:hover:before {
+    height: 100%;
+}
+
 
 #divBestBooks {
     position: relative;
     height: 485px;
     width: 50%;
     background-color: #f3f3f3;
-    margin-top: 5%;
+    margin-top: 38%;
     left: 25%;
     overflow-y: hidden;
 }
@@ -423,13 +561,29 @@ background-color: gray;
      overflow-y: hidden; 
     margin: 2% 1%;
 } */
-
-.divBook {
+/*old one*/
+/* .divBook {
     float: left;
     margin: 1.5% 3%;
     margin-left: 40px;
+} */
+/*new one*/
+.divBook {
+    float: left;
+    margin: 1.5% 42.5px;
+    border-radius: 10px;
 }
 
+/*old one*/
+/* .imgBestBook {
+    float: top;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(179, 179, 179);
+    border-radius: 3%;
+    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
+} */
+/*new one*/
 .imgBestBook {
     float: top;
     width: 200px;
@@ -437,7 +591,7 @@ background-color: gray;
     /* border: solid gray; */
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
-    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 8px 1px 5px 0px rgba(117, 117, 117, 1);
 }
 
 .imgBestBook:hover {
@@ -472,10 +626,18 @@ background-color: gray;
     font-weight: bold;
 } */
 
-.bookDetails {
+/*old one*/
+/* .bookDetails {
     margin-left: 4%;
     margin-top: 2px;
     border-top: 2px solid #14213dff;
+} */
+/*new one*/
+.bookDetails {
+    margin-top: 2px;
+    border-top: 5px solid #14213dff;
+    text-align: center;
+    width: 200px;
 }
 
 /*************footer*************/
@@ -515,11 +677,27 @@ footer {
     width: 80px;
     height: 80px;
     margin: 20px 50px;
+    margin-bottom: 0;
+}
+
+footer h3 {
+    color: #f5f5f5;
+    margin: -48px 145px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    width: 198px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .links {
-    padding: 0 665px;
-    width: 188px;
+    padding: 0 692px;
+    width: 135px;
     margin-top: -70px;
 }
 
@@ -537,20 +715,29 @@ footer {
     font-weight: normal;
 }
 
+.links ul li a:hover {
+    color: rgb(129, 129, 129);
+}
+
 .social {
     margin-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .social ul {
     float: right;
-    margin-top: -50px;
+    margin-top: -60px;
     margin-right: 50px;
 }
 
 .social ul li {
     display: inline-block;
     margin-left: 10px;
+}
+
+.social ul li img:hover {
+    background-color: rgb(129, 129, 129);
+    border-radius: 50%;
 }
 
 .social img {
