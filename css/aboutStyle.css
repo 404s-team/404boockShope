@@ -1,0 +1,41 @@
+main{
+    padding: 100px;
+}
+.content1{
+    
+}
+.about{
+    width: 945px;
+    height: 300px;
+}
+.about .member{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+}
+.about h1{
+    padding: 28px 232px;
+    font-size: 30px;
+    padding-bottom: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.about p{
+    padding: 0 232px;
+    padding-bottom: 15px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+.about img{
+background-color: rgb(26, 26, 26);
+border-radius: 10%;
+height: 30px;
+width: 30px;
+margin-right: 10px;
+}
+.about .links0{
+    padding: 0 232px;
+    width: 400px;
+}
