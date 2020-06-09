@@ -1,6 +1,7 @@
 'user strict';
 var bookDetails;
 addBooks();
+console.log('trans :',trans);
 console.log('ALL: ' + Book.all);
 
 // Render the Details page
