@@ -1,32 +1,38 @@
 main{
-    padding: 100px;
+    padding: 100px 38px;
 }
 .content1{
-    
+    height: 550px;
 }
 .about{
-    width: 945px;
+    float: left;
+    width: 632px;
     height: 300px;
+    margin: 0 44px;
 }
 .about .member{
+    background-color: white;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     float: left;
+    opacity: .9;
 }
 .about h1{
-    padding: 28px 232px;
-    font-size: 30px;
-    padding-bottom: 28px;
+    padding-top: 28px;
+    font-size: 25px;
+    margin: 28px 232px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    width: 165px;
 }
 .about p{
-    padding: 0 232px;
     padding-bottom: 15px;
+    margin: 0 232px;
     width: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
+    text-align: justify;
 }
 .about img{
 background-color: rgb(26, 26, 26);
@@ -36,6 +42,6 @@ width: 30px;
 margin-right: 10px;
 }
 .about .links0{
-    padding: 0 232px;
+    margin: 0 232px;
     width: 400px;
 }
