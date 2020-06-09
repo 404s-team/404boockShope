@@ -470,25 +470,35 @@ background-color: gray;
 }
 
 /************main************/
+<<<<<<< HEAD
+#navHeader{
+=======
 .category {
     padding: 25px 350px;
     margin: 5% 65px;
+>>>>>>> master
     background-color: #14213dff;
-    /* opacity: .8; */
+    height: 80px;
+    width: 1340px;
+    float: none;
+    margin: 45px 88px;
     margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 1;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
 }
 
-.category ul {
-    padding: -1 95px;
+.category{
+    margin: 50px 231.12px;
+    margin-bottom: 0;
 }
 
-.category ul li {
+.category li {
     display: inline-block;
     font-size: 30px;
-    margin-left: 40px;
+    margin: 15px 40px;
 }
 
 .category a {
