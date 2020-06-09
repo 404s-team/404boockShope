@@ -4,18 +4,22 @@ addBooks();
 console.log('ALL: ' + Book.all);
 
 // Render the Details page
-
+trans = JSON.parse(localStorage.getItem('trans'));
 function renderDetails() {
-    if (trans == 'download'){
-        bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
-    }else{
-        //get the exchangable book data from exchangeableBooks array
-        var exBook = new Book(exchangeableBooks[0][0],exchangeableBooks[0][1],exchangeableBooks[0][2],exchangeableBooks[0][3],exchangeableBooks[0][4],exchangeableBooks[0][5],exchangeableBooks[0][6]);
-        bookDetails = exBook;
-        console.log(exBook)
-    }
+    console.log(trans + ' trans')
+    // if (trans === 'download'){
+    //     console.log('details'+bookDetails)
+    //     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
+    // }else if(trans === 'exChange'){
+    //     //get the exchangable book data from exchangeableBooks array
+    //     var exBook = new Book(exchangeableBooks[0][0],exchangeableBooks[0][1],exchangeableBooks[0][2],exchangeableBooks[0][3],exchangeableBooks[0][4],exchangeableBooks[0][5],exchangeableBooks[0][6]);
+    //     bookDetails = exBook;
+    //     console.log('ebooks'+exBook)
+    // }
+    bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
+
     var bookImg = document.getElementById('choosedImg');
-    console.log(bookDetails.bookCover);
+    console.log('book URL: '+bookDetails.bookCover);
     bookImg.setAttribute('src', bookDetails.bookCover);
     var bookTitle = document.getElementById('bookName');
     var bookWriter = document.getElementById('authorName');
@@ -34,21 +38,23 @@ renderDetails();
 var recommendedContainer = document.getElementById('recommended');
 function renderRecommended() {
     var myArr = [];
-    if (trans == 'download'){
+    if (trans == 'download') {
         myArr = booksArr;
-    }else{
+    } else if (trans === 'exChange') {
         //get the exchangable book data from exchangeableBooks array
-        myArr = exchangeableBooks;
+        myArr = JSON.parse(localStorage.getItem('ExBooks'));
     }
+console.log('arr '+myArr);
 
     //Show in Recomendation part the same type of choosen book, but if there is not any, show all books
 
-    var numBooks=0;
-    for (var i = 0; i < myArr.length; i++) {
+    var numBooks = 0;
+    console.log('array :'+myArr);
+    for (var i = 0; i < myArr.length-1; i++) {
         var array = myArr[i];
-        console.log(bookDetails.bookType);
+        console.log('book :'+bookDetails.bookType);
         if (array[4] === bookDetails.bookType) {
-            console.log(i);
+            console.log('specific');
             numBooks++;
             var link = document.createElement('a');
             link.setAttribute('href', 'details.html')
@@ -60,6 +66,8 @@ function renderRecommended() {
         };
     };
     if (numBooks < 1) {
+        console.log('random');
+        
         for (var i = 0; i < myArr.length; i++) {
             var array = myArr[i];
             var link = document.createElement('a');

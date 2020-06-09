@@ -8,6 +8,7 @@ container.addEventListener('click', imgClickHandler);
 function imgClickHandler(event){
     var clickedBook;
     trans='download';
+    localStorage.setItem('trans',JSON.stringify(trans));
     if (event.target != container){
         if(event.target.id){
             console.log(event.target.id);

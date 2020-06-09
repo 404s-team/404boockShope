@@ -39,9 +39,9 @@ var booksArr = [
 
 ];
 var exchangeableBooks = [
-    ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','0$','1','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error, beatae saepe harum eligendi, aperiamvel molestiae laboriosam alias ex quasi ipsa nobis at repellat reiciendis sapiente laborum! Fugit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus blanditiis id error corporis beatae, impedit reprehenderit laudantium nesciunt fuga!','1'],
-    ['The Girl in Room 105','by Chetan Bhagat','bookCovers/hororBooks/TheGirlinRoom105.jpg','0$','1','','7'],
-    ['A Global History','Francis D. K','bookCovers/historyBooks/AGlobalHistoryofArchitecture.jpg','0$','1','','8'],
+    ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','0$','exchange','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad error, beatae saepe harum eligendi, aperiamvel molestiae laboriosam alias ex quasi ipsa nobis at repellat reiciendis sapiente laborum! Fugit, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus blanditiis id error corporis beatae, impedit reprehenderit laudantium nesciunt fuga!','1'],
+    ['The Girl in Room 105','by Chetan Bhagat','bookCovers/hororBooks/TheGirlinRoom105.jpg','0$','exchange','','7'],
+    ['A Global History','Francis D. K','bookCovers/historyBooks/AGlobalHistoryofArchitecture.jpg','0$','exchange','','8'],
 //     ['Raavan','Amish Tripathi','bookCovers/scinceBooks/Raavan.jpg','0$','Fantasi','','17'],
 //     ['Learn to Write','Crystal Radke','bookCovers/kidsBooks/myFirstLearntoWrite.jpg','0$','Kids','','18']
 ]
