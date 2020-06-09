@@ -141,9 +141,8 @@ background-color: gray;
 }
 
 .exLink {
-    width: 200px;
-    margin: 30px 0;
-    padding: 0 175px;
+    width: 142px;
+    padding: 0 205px;
     margin-top: -50px;
 }
 .button a{
@@ -432,9 +431,7 @@ background-color: gray;
 /*new one*/
 .divBook {
     float: left;
-    margin: 1.5% 2%;
-    margin-left: 40px;
-    border: solid gray;
+    margin: 1.5% 42.5px;
     border-radius: 10px;
 }
 
@@ -455,7 +452,7 @@ background-color: gray;
     /* border: solid gray; */
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
-    box-shadow: 7px 12px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 8px 1px 5px 0px rgba(117, 117, 117, 1);
 } 
 
 .imgBestBook:hover {
@@ -498,10 +495,10 @@ background-color: gray;
 } */
 /*new one*/
 .bookDetails {
-    margin-left: 4%;
     margin-top: 2px;
-    border-top: 2px solid #14213dff;
+    border-top: 5px solid #14213dff;
     text-align: center;
+    width: 200px;
 }
 /*************footer*************/
 /* #navFooter{
