@@ -11,8 +11,10 @@ function imgClickHandler(event){
     localStorage.setItem('trans',JSON.stringify(trans));
     if (event.target != container){
         if(event.target.id){
-            console.log(event.target.id);
-        clickedBook = Book.all[(event.target.id)-1]
+            var allBook=JSON.parse(localStorage.getItem('AllBooks'));
+            clickedBook = allBook[(event.target.id) - 1];
+            clickedBook.click++;
+            localStorage.setItem('AllBooks', JSON.stringify(allBook));
     }
 }
 console.log(clickedBook)
