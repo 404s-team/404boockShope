@@ -93,7 +93,7 @@ for (let i = 0; i < arr.length; i++) {
 
 recommendedContainer.addEventListener('click', imgClickHandler);
 function imgClickHandler(event) {
-    event.preventDefault()
+    // event.preventDefault()
     var clickedBook;
     var totalClickedBooks=JSON.parse(localStorage.getItem('totalClickedBooks'))||[];
     console.log('totalClickedBooks: '+totalClickedBooks)
@@ -131,4 +131,5 @@ function addToFavorite(event) {
     var newBook=JSON.parse(localStorage.getItem('clickedBook'));
     var favorite=new Favoraite(newBook.bookName,newBook.bookCover)
     favorite.saveToLocalStorage();
+    favoriteBtn.style.backgroundColor='red'
 };
