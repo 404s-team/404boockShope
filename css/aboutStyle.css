@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
 main{
     padding: 100px 38px;
 }
@@ -29,6 +30,7 @@ main{
     opacity: .9;
     margin-top: 50px;
     margin: 50px 15px;
+    animation: rotate ease 2s;
 }
 .member:active{
     width: 300px;
@@ -36,8 +38,8 @@ main{
 }
 .about h1{
     font-size: 25px;
-    margin: 88px 232px;
-    margin-bottom: 20px;
+    margin-top: 52px;
+    margin-left: 220px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     width: 165px;
@@ -45,11 +47,14 @@ main{
 }
 .about p{
     padding-bottom: 15px;
-    margin: 0 232px;
     width: 400px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     text-align: justify;
+    margin-top: 80px;
+    margin-left: 231px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 150%;
 }
 .about img{
 background-color: rgb(26, 26, 26);
@@ -61,4 +66,49 @@ margin-right: 10px;
 .about .links0{
     margin: 0 232px;
     width: 400px;
+    position: relative;
+    top: 182px;
+}
+/*****************/
+@keyframes rotate{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    /* from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} */
+    form{height: 15px;}
+    to{height: 30px;}
+    form{width: 15px;}
+    to{width: 30px;}
+}
+@keyframes  slide {
+    from {padding-left: 250px;}
+    to {padding-left:0px;}
+    from {left: 180px;}
+    to {left: 0px;}
+    from{width: 220px;}
+    to{width: 20px;}
+    from{border-radius: 0px;}
+    to{border-radius: 100%;}
+}
+.hName{
+    position: absolute;
+z-index: 0;
+}
+.pDisc{
+    position: absolute;
+z-index: 0;
+}
+.imgDiv {
+    animation: slide ease 3s;
+    position: relative;
+    float: left;
+    background-color: #f5f5f5;
+    width: 220px;
+    left: 0px;
+    z-index: 1;
+}
+.about:hover{
+    transform: scale(1.1);
 }
