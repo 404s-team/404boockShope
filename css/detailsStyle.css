@@ -271,7 +271,8 @@ aside #sponsorHead{
 
 
 
-#recommended {
+.recommended {
+    display: flex;
     margin: 0px 155px;
     overflow: hidden;
     height: 315px;
@@ -280,11 +281,11 @@ aside #sponsorHead{
     white-space: nowrap;
 }
 
-#recommended:hover {
+.recommended:hover {
     overflow-x: auto;
 }
 
-#recommended img {
+.recommended img {
     margin: 10px 30px;
     height: 300px;
     width: 200px;
@@ -299,7 +300,7 @@ aside #sponsorHead{
     margin-left: 170px;
 }
 
-#recommended img:hover {
+.recommended img:hover {
     border-radius: 5%;
     box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
     transform: scale(0.96);
