@@ -93,17 +93,24 @@ for (let i = 0; i < arr.length; i++) {
 
 recommendedContainer.addEventListener('click', imgClickHandler);
 function imgClickHandler(event) {
+    // event.preventDefault()
     var clickedBook;
+    var totalClickedBooks=JSON.parse(localStorage.getItem('totalClickedBooks'))||[];
+    console.log('totalClickedBooks: '+totalClickedBooks)
+    
     if (event.target != recommendedContainer) {
         if (event.target.id && trans == 'download') {
-
-            clickedBook = Book.all[(event.target.id) - 1];
+            var allBook=JSON.parse(localStorage.getItem('AllBooks'));
+            clickedBook = allBook[(event.target.id) - 1];
+            clickedBook.click++;
+            localStorage.setItem('AllBooks', JSON.stringify(allBook));
+         
         }else{
             arrtoBooks(JSON.parse(localStorage.getItem('ExBooks')))
             clickedBook= exchagBooksArr[(event.target.id) - 1];
+            
         }
     }
-
     localStorage.setItem('clickedBook', JSON.stringify(clickedBook))
 }
 
@@ -115,13 +122,14 @@ function imgClickHandler(event) {
 var favoriteBtn=document.getElementById('favorite');
 favoriteBtn.addEventListener('click',addToFavorite);
 function addToFavorite(event) {
-    console.log('here1'+Favoraite.all)
+    // console.log('here1'+Favoraite.all)
     var favoriteStored = localStorage.getItem('favorite');
     if (favoriteStored) {
         Favoraite.all= JSON.parse(favoriteStored);
     }
-    console.log('here2'+Favoraite.all)
+    // console.log('here2'+Favoraite.all)
     var newBook=JSON.parse(localStorage.getItem('clickedBook'));
     var favorite=new Favoraite(newBook.bookName,newBook.bookCover)
     favorite.saveToLocalStorage();
+    favoriteBtn.style.backgroundColor='red'
 };

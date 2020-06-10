@@ -2,12 +2,21 @@
 //Add event to add on detailes page ---> local storege
 var tableEl;
 var btnTd;
+var clicksData = [];
 function loadFav() {
-    console.log(JSON.parse(localStorage.getItem('favorite')));
+    var totalBooks = JSON.parse(localStorage.getItem('AllBooks'));
+    for (var i = 0; i < totalBooks.length; i++) {
+        clicksData.push(totalBooks[i].click);
+    }
     
-    var allFavoraite = JSON.parse(localStorage.getItem('favorite'));
+    console.log(clicksData);
+
+    // console.log(JSON.parse(localStorage.getItem('favorite')));
+    // console.log('books :'+JSON.parse(localStorage.getItem('AllBooks')));
+    Favoraite.all = JSON.parse(localStorage.getItem('favorite'));
+    // console.log('fav :'+Favoraite.all);
     tableEl = document.getElementById('favorite');
-    for (var index = 0; index < allFavoraite.length; index++) {
+    for (var index = 0; index < Favoraite.all.length; index++) {
 
 
 
@@ -17,11 +26,12 @@ function loadFav() {
         rowEl.appendChild(cellEl1);
         var imgEl = document.createElement('img');
         cellEl1.appendChild(imgEl);
-        imgEl.setAttribute('src', allFavoraite[index].imgPath);
-        imgEl.setAttribute('class','fav')
+        imgEl.setAttribute('src', Favoraite.all[index].imgPath);
+        imgEl.setAttribute('class', 'fav')
 
         var cellEl2 = document.createElement('td');
         rowEl.appendChild(cellEl2);
+        cellEl2.textContent = Favoraite.all[index].name;
         var name = document.createElement('p');
         cellEl2.appendChild(name);
         name.setAttribute('class','para')
@@ -50,11 +60,10 @@ function removeItemFromCart(event) {
         var childParent = event.target.parentNode.parentNode.rowIndex;
         tableEl.deleteRow(childParent);
         var arr = JSON.parse(localStorage.getItem('favorite'));
-        arr.splice(childParent-1, 1);
+        arr.splice(childParent - 1, 1);
         localStorage.setItem('favorite', JSON.stringify(arr));
-    
+
     };
 
 };
 
-   
