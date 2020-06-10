@@ -66,7 +66,7 @@ function storExBooks(){
     localStorage.setItem('ExBooks',JSON.stringify(arrExBooksList));
 }
 var img ;
-var bookTypeVar = 'all';
+var bookTypeVar;
 function addBooks(){
     for (let i = 0; i < booksArr.length; i++) {
         var book = new Book(
@@ -82,6 +82,11 @@ function addBooks(){
     }
 }
 function mainRender(){
+    if (bookTypeVar == null || bookTypeVar == undefined){
+        bookTypeVar = 'all';
+    }
+    console.log(bookTypeVar);
+    
     if (Book.all.length){
         
     }else{addBooks();}
@@ -129,3 +134,23 @@ function mainRender(){
         
     }
 }
+function changeFilter(myString){
+    bookTypeVar = myString
+    location.replace("index.html")
+    mainRender();
+}
+document.getElementById('all').addEventListener('click',function navFilter(){
+    changeFilter('all');
+});
+document.getElementById('History').addEventListener('click',function navFilter(){
+    changeFilter('History');
+});
+document.getElementById('hurror').addEventListener('click',function navFilter(){
+    changeFilter('hurror');
+});
+document.getElementById('Fantasi').addEventListener('click',function navFilter(){
+    changeFilter('Fantasi');
+});
+document.getElementById('Kids').addEventListener('click',function navFilter(){
+    changeFilter('Kids');
+});
