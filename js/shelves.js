@@ -36,7 +36,7 @@ for (let index = 0; index < Book.all.length; index++) {
         bookName.setAttribute('class','userBookName');
         bookAuther.setAttribute('class','userBookAuther');
         bookDisc.setAttribute('class','userBookDisc');
-        bookName.textContent = Book.all[index].bookName;
-        bookAuther.textContent = Book.all[index].bookauthor;
+        // bookName.textContent = Book.all[index].bookName;
+        // bookAuther.textContent = Book.all[index].bookauthor;
         // bookDisc.textContent = Book.all[index].bookDescription;
 }

@@ -3,6 +3,7 @@ var bookDetails;
 addBooks();
 var btn = document.getElementById('btnLink');
 var text = document.getElementById('pRecommended')
+btn.addEventListener('click',sendMeToLink);
 
 // console.log('trans :',trans);
 // console.log('ALL: ' + Book.all);
@@ -12,6 +13,13 @@ trans = JSON.parse(localStorage.getItem('trans'));
 if (trans != 'download'){
     btn.innerHTML = 'Exchange'; 
     text.innerHTML = 'Available Exchange Books';
+}
+function sendMeToLink(){
+    if (btn.innerHTML == 'Download'){
+        location.replace("https://drive.google.com/file/d/1rFuKc0KpFf581lyftS-2aU0qG-E2Bqwo/view?usp=sharing");
+    }else{
+        alert('Thank you for visiting our website we will contact you soon.');
+    }
 }
 function renderDetails() {
     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
