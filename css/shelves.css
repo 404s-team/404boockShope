@@ -1,0 +1,305 @@
+/* header */
+
+
+main{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#headerDetail {
+    box-shadow: 1px 1px 5px 0px;
+    width: 100%;
+}
+
+#headerDetail nav {
+    background-color: #14213dff;
+    width: 100%;
+    overflow: hidden;
+}
+
+#headerDetail img {
+    float: left;
+    display: block;
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+
+}
+
+#headerDetail h1 {
+    float: left;
+    margin: 28px;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: honeydew;
+
+}
+
+#headerDetail input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 16px;
+    font-size: 17px;
+    /* box-shadow: 0 0 10px black; */
+}
+
+#link {
+    float: right;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    margin-right: 20px;
+    text-decoration: none;
+    /* text-shadow: 0 0 5px black; */
+    color: honeydew;
+    font-weight: bolder;
+
+}
+
+#headerDetail a:hover {
+    color: white;
+    background-color: orange;
+    color: #14213dff;
+    border-radius: 5px;
+
+
+}
+
+#choosed {
+    overflow: hidden;
+    margin: 85px 0 105px 40px;
+    padding: 50px;
+    width: 952px;
+    background-color: #f5f5f5;
+    box-shadow: 5px 1px 5px 0 #ddd;
+}
+
+#choosed img {
+
+    margin: 20px 0 20px 0px;
+    float: left;
+    border: solid gray;
+    background-color: rgb(179, 179, 179);
+    border-radius: 3%;
+    box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
+    height: 600px;
+    width: 400px;
+}
+
+/* #choosed img:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
+    transform: scale(0.96);
+} */
+
+#bookDetails {
+
+    float: left;
+    margin: 20px 10px 20px 20px;
+    padding: 35px;
+    width: 40%;
+    height: 500px;
+    
+}
+/* aside{
+    float: right;
+    height: 500px;
+    /* width: 20%; */
+    /* margin: 20px 10px 0 0; */
+    /* border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(253, 249, 205); 
+} */
+aside #addImg{
+    width: 300px;
+    height: 500px;
+    margin: -650px 30px 0 0;
+    float: right;
+}
+/* aside h3{
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
+}
+aside h4{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+aside #sponsor{
+    margin: 50px 20px 40px 20px;
+}
+aside #motivation{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    vertical-align: middle;
+    height: max-content;
+    margin: 50% 5px;
+
+}
+aside #sponsorHead{
+    font-weight: bolder;
+    font-size: large;
+} */
+
+#bookName {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #fca311ff;
+    margin-bottom: 30px;
+    margin-top: -35px;
+    width: 580px;
+}
+
+#authorName {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+#price {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#bookDisc {
+    margin-top: 100px;
+    text-indent: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 450px;
+    text-align: justify;
+    height: 270px;
+}
+
+
+
+#submit,#read {
+    /* display: block; */
+    margin: 50px 20px ;
+    background-color:orange;
+    
+    width: 150px;
+    /* color: white;
+    height: 50px;
+    border-style: none;*/
+    box-shadow: 0 0 5px black; 
+    /* border: 2px solid currentColor; */
+    border-radius: 20px;
+    color: #14213dff;
+    /* font-family: roboto; */
+    font-size: large;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 15px 15px;
+    /* position :relative; */
+}
+/* GENERAL STYLES */
+
+
+.round a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.round .submit {
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    margin: 55px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fca311ff;
+    color: #14213dff;
+    border-radius: 5px;
+    transition: color .5s;
+}
+
+
+.round .submit:hover {
+    background-color: #14213dff;
+    color: #fff;
+}
+
+
+
+#read:hover {
+    border: 2px solid transparent;
+    color: #14213dff;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+
+#avilable {
+    margin: 42px;
+    width: 1350px;
+    background-color: #14213dff;
+    box-shadow: 0 0 10px rgb(59, 64, 75);
+    height: 350px;
+    margin-bottom: 180px;
+}
+
+#avilable h2 {
+    color: #fca311ff;
+    margin: 20px;
+    padding: 50px 0 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+/**************/
+.recommended {
+    display: flex;
+    margin: 0px 155px;
+    overflow: hidden;
+    height: 315px;
+    max-width: 1350px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+
+.recommended:hover {
+    overflow-x: auto;
+}
+
+.recommended img {
+    margin: 10px 30px;
+    height: 300px;
+    width: 200px;
+    box-shadow: 8px 1px 5px 0px rgba(117, 117, 117, 1);
+}
+.bookStander{
+    border: 6px solid #14213dff;
+    margin-top: -13px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 1005px;
+    margin-left: 170px;
+}
+
+.recommended img:hover {
+    border-radius: 5%;
+    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
+    transform: scale(0.96);
+}
