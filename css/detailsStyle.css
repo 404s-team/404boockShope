@@ -12,8 +12,7 @@ body {
 main{
     width: 95%;
     margin: 0 auto;
-    
-
+    height: 1350px;
 }
 
 #headerDetail {
@@ -84,7 +83,7 @@ main{
 #choosed {
     overflow: hidden;
     margin: 40px 0 40px 40px;
-    /* width: 90%; */
+    padding: 50px;
 }
 
 #choosed img {
@@ -95,7 +94,7 @@ main{
     background-color: rgb(179, 179, 179);
     border-radius: 3%;
     box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
-    height: 500px;
+    height: 600px;
     width: 400px;
 }
 
@@ -109,7 +108,7 @@ main{
 
     float: left;
     margin: 20px 10px 20px 20px;
-    padding: 20px;
+    padding: 35px;
     width: 40%;
     height: 500px;
     
@@ -156,32 +155,32 @@ aside #sponsorHead{
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    font-size: 40px;
-    /* text-shadow: 0 0 2px black; */
-
-
+    font-size: 50px;
+    color: #fca311ff;
+    margin-bottom: 30px;
 }
 
 #authorName {
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-
+    font-size: 25px;
 }
 
 #price {
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
 }
 
 #bookDisc {
-    margin-top: 100px;
+    margin-top: 50px;
     text-indent: 50px;
     font-family: 'Roboto', sans-serif;
-    font-size: large;
-
-    /* margin-top: 325px; */
+    font-size: 20px;
+    line-height: 1.5;
+    width: 450px;
+    text-align: justify;
 }
 
 #submit,#read {
@@ -221,10 +220,11 @@ aside #sponsorHead{
     width: 130px;
     height: 40px;
     line-height: 40px;
-    margin: -17px 0px -19px 300px;
+    margin: 55px 0px;
     position: relative;
     overflow: hidden;
-    border: 2px solid #fca311ff;
+    background-color: #fca311ff;
+    color: #14213dff;
     border-radius: 5px;
     transition: color .5s;
 }
@@ -256,6 +256,7 @@ aside #sponsorHead{
 }
 
 .round .submit:hover {
+    background-color: #14213dff;
     color: #fff;
 }
 
@@ -287,47 +288,58 @@ aside #sponsorHead{
 
 
 #avilable {
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 80%; */
+    margin: 42px;
+    width: 1350px;
     background-color: #14213dff;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(59, 64, 75);
+    height: 350px;
 }
 
 #avilable h2 {
-    font-size: large;
-    font-weight: bolder;
     color: white;
     margin: 20px;
-    padding: 20px;
+    padding: 50px 0 30px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
     text-shadow: 0 0 5px orange;
+    text-transform: capitalize;
 }
 
+
+
 #recommended {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: max-content;
-    margin: 20px auto;
-    /* overflow: hidden; */
-    height: 280px;
+    /* width: max-content; */
+    margin: 0px 20px;
+    overflow: hidden;
+    height: 315px;
+    max-width: 1350px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
 
-
+#recommended:hover {
+    overflow-x: auto;
 }
 
 #recommended img {
-    margin-left: 10px;
-    opacity: 1;
-    margin: 10px 5px;
-    height: 250px;
+    margin: 10px 30px;
+    height: 300px;
     width: 200px;
-
+    box-shadow: 8px 1px 5px 0px rgba(117, 117, 117, 1);
+}
+.bookStander{
+    border: 6px solid #14213dff;
+    margin-top: -13px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 1260px;
+    margin-left: 35px;
 }
 
 #recommended img:hover {
     border-radius: 5%;
-    opacity: 0.5;
+    box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
+    transform: scale(0.96);
 }
