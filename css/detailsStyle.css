@@ -291,7 +291,7 @@ aside #sponsorHead{
     margin: 42px;
     width: 1350px;
     background-color: #14213dff;
-    box-shadow: 0 0 10px #14213dff;
+    box-shadow: 0 0 10px rgb(59, 64, 75);
     height: 350px;
 }
 
@@ -304,32 +304,38 @@ aside #sponsorHead{
     text-align: center;
     font-size: 30px;
     text-shadow: 0 0 5px orange;
+    text-transform: capitalize;
 }
 
+
+
 #recommended {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: max-content;
-    margin: 20px auto;
-    /* overflow: hidden; */
-    height: 280px;
+    /* width: max-content; */
+    margin: 0px 20px;
+    overflow: hidden;
+    height: 315px;
+    max-width: 1350px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
 
-
+#recommended:hover {
+    overflow-x: auto;
 }
 
 #recommended img {
-    margin: 10px 50px;
+    margin: 10px 30px;
     height: 300px;
     width: 200px;
     box-shadow: 8px 1px 5px 0px rgba(117, 117, 117, 1);
 }
 .bookStander{
-    border: 6px solid #fca311ff;
-    margin-top: 35px;
+    border: 6px solid #14213dff;
+    margin-top: -13px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 835px;
-    margin-left: 252px;
+    width: 1260px;
+    margin-left: 35px;
 }
 
 #recommended img:hover {
