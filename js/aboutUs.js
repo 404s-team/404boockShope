@@ -13,7 +13,7 @@ img2.addEventListener('webkitAnimationEnd',function myEndFunction()
 });
 img3.addEventListener('webkitAnimationEnd',function myEndFunction()
 {
-    img3.setAttribute('src','https://www.shankarainfra.com/img/avatar.png');
+    img3.setAttribute('src','https://ca.slack-edge.com/TNGRRLUMA-U01238HFG5D-eb9440f7f99c-512');
 });
 img4.addEventListener('webkitAnimationEnd',function myEndFunction()
 {
