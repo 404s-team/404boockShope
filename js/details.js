@@ -14,16 +14,6 @@ if (trans != 'download'){
     text.innerHTML = 'Available Exchange Books';
 }
 function renderDetails() {
-    // console.log(trans + ' trans')
-    // if (trans === 'download'){
-    //     console.log('details'+bookDetails)
-    //     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
-    // }else if(trans === 'exChange'){
-    //     //get the exchangable book data from exchangeableBooks array
-    //     var exBook = new Book(exchangeableBooks[0][0],exchangeableBooks[0][1],exchangeableBooks[0][2],exchangeableBooks[0][3],exchangeableBooks[0][4],exchangeableBooks[0][5],exchangeableBooks[0][6]);
-    //     bookDetails = exBook;
-    //     console.log('ebooks'+exBook)
-    // }
     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
     console.log('bookDetails : ',bookDetails)
     var bookImg = document.getElementById('choosedImg');
