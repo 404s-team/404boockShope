@@ -1,13 +1,20 @@
 'user strict';
 var bookDetails;
 addBooks();
-console.log('trans :',trans);
-console.log('ALL: ' + Book.all);
+var btn = document.getElementById('btnLink');
+var text = document.getElementById('pRecommended')
+
+// console.log('trans :',trans);
+// console.log('ALL: ' + Book.all);
 
 // Render the Details page
 trans = JSON.parse(localStorage.getItem('trans'));
+if (trans != 'download'){
+    btn.innerHTML = 'Exchange'; 
+    text.innerHTML = 'Available Exchange Books';
+}
 function renderDetails() {
-    console.log(trans + ' trans')
+    // console.log(trans + ' trans')
     // if (trans === 'download'){
     //     console.log('details'+bookDetails)
     //     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
@@ -18,9 +25,9 @@ function renderDetails() {
     //     console.log('ebooks'+exBook)
     // }
     bookDetails = JSON.parse(localStorage.getItem('clickedBook'));
-
+    console.log('bookDetails : ',bookDetails)
     var bookImg = document.getElementById('choosedImg');
-    console.log('book URL: '+bookDetails.bookCover);
+    // console.log('book URL: '+bookDetails.bookCover);
     bookImg.setAttribute('src', bookDetails.bookCover);
     var bookTitle = document.getElementById('bookName');
     var bookWriter = document.getElementById('authorName');
@@ -44,18 +51,18 @@ function renderRecommended() {
     } else if (trans === 'exChange') {
         //get the exchangable book data from exchangeableBooks array
         myArr = JSON.parse(localStorage.getItem('ExBooks'));
+        console.log('arr '+myArr.length);
     }
-console.log('arr '+myArr);
 
     //Show in Recomendation part the same type of choosen book, but if there is not any, show all books
 
     var numBooks = 0;
-    console.log('array :'+myArr);
+    // console.log('array :'+myArr);
     for (var i = 0; i < myArr.length-1; i++) {
         var array = myArr[i];
-        console.log('book :'+bookDetails.bookType);
+        // console.log('book :'+bookDetails.bookType);
         if (array[4] === bookDetails.bookType) {
-            console.log('specific');
+            // console.log('specific');
             numBooks++;
             var link = document.createElement('a');
             link.setAttribute('href', 'details.html')
@@ -67,7 +74,7 @@ console.log('arr '+myArr);
         };
     };
     if (numBooks < 1) {
-        console.log('random');
+        // console.log('random');
         
         for (var i = 0; i < myArr.length; i++) {
             var array = myArr[i];
@@ -83,16 +90,27 @@ console.log('arr '+myArr);
 };
 renderRecommended();
 
+
+var exchagBooksArr = [];
+function arrtoBooks(arr){
+for (let i = 0; i < arr.length; i++) {
+    var book = new Book(arr[i][0],arr[i][1],arr[i][2],arr[i][3],arr[i][4],arr[i][5],arr[i][6],);
+    exchagBooksArr.push(book);
+}
+    }
+
 // Event for Recomendation Part
 
 recommendedContainer.addEventListener('click', imgClickHandler);
 function imgClickHandler(event) {
-
     var clickedBook;
     if (event.target != recommendedContainer) {
-        if (event.target.id) {
+        if (event.target.id && trans == 'download') {
 
-            clickedBook = Book.all[(event.target.id) - 1]
+            clickedBook = Book.all[(event.target.id) - 1];
+        }else{
+            arrtoBooks(JSON.parse(localStorage.getItem('ExBooks')))
+            clickedBook= exchagBooksArr[(event.target.id) - 1];
         }
     }
 

@@ -19,12 +19,12 @@ function addExBook(e) {
     trans = 'exChange';
     localStorage.setItem('trans',JSON.stringify(trans));
     var bookName = document.getElementById('BookName').value;
-    var bookAuther = document.getElementById('BookName').value;
-    var bookDisc = document.getElementById('BookName').value;
+    var bookAuther = document.getElementById('auther').value;
+    var bookDisc = document.getElementById('BookDisc').value;
     var bookImg = URL.createObjectURL(document.getElementById('imageHolder').files[0]);
-
-    var newExBook = new Book(bookName, bookAuther, output.src, '0', 'exchange', bookDisc, 'NewBook');
-    var newExBookArray=[bookName,bookAuther, output.src, '0', 'exchange', bookDisc, 'NewBook']
+    var StoredExBooks = JSON.parse(localStorage.getItem('ExBooks'));
+    var newExBook = new Book(bookName, bookAuther, output.src, 'Free', 'exchange', bookDisc, String(StoredExBooks.length +1));
+    var newExBookArray=[bookName,bookAuther, bookImg, 'Free', 'exchange', bookDisc, String(StoredExBooks.length +1)]
     console.log('test'+document.getElementById('imageHolder').files[0].path);
 
     // var url = "details.html";
@@ -32,7 +32,9 @@ function addExBook(e) {
     if (bookName && bookAuther && bookDisc && bookImg){
         setTimeout(location.replace("details.html"),0)
         
-        storExBooks()
+        // storExBooks()
+        userBooks.push(newExBook);
+        localStorage.setItem('userBooks',JSON.stringify(userBooks));
         arrExBooksList.push(newExBook);
         exchangeableBooks.push(newExBookArray);
         localStorage.setItem('clickedBook',JSON.stringify(newExBook));
