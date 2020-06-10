@@ -37,29 +37,27 @@
         </div>
     </header>
     <main>
-        <form id="exchangeForm" action="" method="post">
-            <fieldset>
-                <legend>upload book image here:</legend>
-                <div id="divMain">
+        <div id="choosed">
+            <form id="exchangeForm" action="" method="post">
+                <fieldset>
+                    <div id="divMain">
 
-                    <img id="choosedImg" src="https://placehold.it/400x600/ttt" alt="">
+                        <!-- <img id="choosedImg" src="https://placehold.it/400x600/ttt" alt=""> -->
 
-                    <div id="inputs">
-                        <input class="userData" placeholder="Your Name" id="userName" type="text" required>
-                        <input class="userData" placeholder="Email" id="Email" type="email" required>
+                        <div id="inputs">
+                            <input class="userData" placeholder="Your Name" id="userName" type="text" required>
+                            <input class="userData" placeholder="Email" id="Email" type="email" required>
 
-                        <div id="bookde">
-                            <input class="userData" placeholder="Book Name" id="BookName" type="text" required>
-                            <input class="userData" placeholder="Auther Name" id="auther" type="text" required>
-                            <textarea class="userData" id="BookDisc" placeholder="Book Discription..." cols="30"
-                                rows="10" required></textarea>
+                            <div id="bookde">
+                                <input class="userData" placeholder="Book Name" id="BookName" type="text" required>
+                                <input class="userData" placeholder="Auther Name" id="auther" type="text" required>
+                                <textarea class="userData" id="BookDisc" placeholder="Book Discription..." rows="7" cols="30"
+                                    rows="10" required></textarea>
+                            </div>
+                            <button class="sub">
+                                submit
+                            </button>
                         </div>
-                        <button class="sub">
-                            submit
-                        </button>
-                    </div>
-
-                </div>
 
                 <label class="file">
                     <input id="imageHolder" id="img" name="img" accept="image/*" type="file"
@@ -67,14 +65,20 @@
                     <span class="file-custom"></span>
                 </label>
 
+                    <label class="file">
+                        <input onchange="loadFile(event)" id="imageHolder" id="img" name="img" accept="image/*"
+                            type="file" id="file" aria-label="File browser example">
+                        <span class="file-custom" id="choosedImg"></span>
+                    </label>
 
-            </fieldset>
 
-        </form>
+                </fieldset>
 
-        <div id="ad">
+            </form>
+        </div>
+        <aside>
             <button class="buy">Buy Now!</button>
-            <img src="img/Ad1_3060.jpg" alt=""></div>
+            <img src="img/Ad1_3060.jpg" alt="" id="addImg"></aside>
 
     </main>
 

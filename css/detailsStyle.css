@@ -4,7 +4,6 @@
 main{
     width: 95%;
     margin: 0 auto;
-    height: 1350px;
 }
 
 #headerDetail {
@@ -74,7 +73,7 @@ main{
 
 #choosed {
     overflow: hidden;
-    margin: 85px 0 40px 40px;
+    margin: 85px 0 105px 40px;
     padding: 50px;
     width: 952px;
     background-color: #f5f5f5;
@@ -256,6 +255,7 @@ aside #sponsorHead{
     background-color: #14213dff;
     box-shadow: 0 0 10px rgb(59, 64, 75);
     height: 350px;
+    margin-bottom: 180px;
 }
 
 #avilable h2 {
