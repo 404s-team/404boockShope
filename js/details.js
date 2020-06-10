@@ -106,3 +106,22 @@ function imgClickHandler(event) {
 
     localStorage.setItem('clickedBook', JSON.stringify(clickedBook))
 }
+
+// --------------------------------
+
+//Add Event to creat favorite page
+
+
+var favoriteBtn=document.getElementById('favorite');
+favoriteBtn.addEventListener('click',addToFavorite);
+function addToFavorite(event) {
+    console.log('here1'+Favoraite.all)
+    var favoriteStored = localStorage.getItem('favorite');
+    if (favoriteStored) {
+        Favoraite.all= JSON.parse(favoriteStored);
+    }
+    console.log('here2'+Favoraite.all)
+    var newBook=JSON.parse(localStorage.getItem('clickedBook'));
+    var favorite=new Favoraite(newBook.bookName,newBook.bookCover)
+    favorite.saveToLocalStorage();
+};
