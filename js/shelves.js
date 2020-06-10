@@ -26,6 +26,9 @@ for (let index = 0; index < Book.all.length; index++) {
         img.setAttribute('src',Book.all[index].bookCover)
         var divDetails = document.createElement('div');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 31d158a2875ac04928f701021758d50370555423
         divParent.appendChild(divDetails);
         divDetails.setAttribute('class','userBookDetails')
         var bookName = document.createElement('p');
@@ -37,6 +40,7 @@ for (let index = 0; index < Book.all.length; index++) {
         bookName.setAttribute('class','userBookName');
         bookAuther.setAttribute('class','userBookAuther');
         bookDisc.setAttribute('class','userBookDisc');
+<<<<<<< HEAD
 =======
         // divParent.appendChild(divDetails);
         // divDetails.setAttribute('class','userBookDetails')
@@ -50,6 +54,9 @@ for (let index = 0; index < Book.all.length; index++) {
         // bookAuther.setAttribute('class','userBookAuther');
         // bookDisc.setAttribute('class','userBookDisc');
 >>>>>>> c7aa6c96739827c0e0a8c4c029ce07e2916ffdfc
+=======
+
+>>>>>>> 31d158a2875ac04928f701021758d50370555423
         // bookName.textContent = Book.all[index].bookName;
         // bookAuther.textContent = Book.all[index].bookauthor;
         // bookDisc.textContent = Book.all[index].bookDescription;
