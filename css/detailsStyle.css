@@ -1,14 +1,6 @@
 /* header */
 
-body {
-    /* font-family: cursive; */
-    background-repeat: no-repeat;
-    /* background-size: 300px 300px; */
-    /* background-image: url(https://media.istockphoto.com/vectors/books-sketch-seamless-vector-id594484448?k=6&m=594484448&s=612x612&w=0&h=a67hFSIILzjjuDuTfNrqDnoRRwEhe2rGkgEvV_js80k=); */
-    /* background-image: url(https://render.fineartamerica.com/images/rendered/default/poster/8/8/break/images/artworkimages/medium/1/seamless-book-pattern-background-wallpaper-diego-schtutman.jpg); */
-    /* opacity: 0.01; */
-    /* background-image: url(); */
-}
+
 main{
     width: 95%;
     margin: 0 auto;
@@ -82,8 +74,11 @@ main{
 
 #choosed {
     overflow: hidden;
-    margin: 40px 0 40px 40px;
+    margin: 85px 0 40px 40px;
     padding: 50px;
+    width: 952px;
+    background-color: #f5f5f5;
+    box-shadow: 5px 1px 5px 0 #ddd;
 }
 
 #choosed img {
@@ -98,11 +93,11 @@ main{
     width: 400px;
 }
 
-#choosed img:hover {
+/* #choosed img:hover {
     cursor: pointer;
     box-shadow: 1px 1px 5px 0px rgba(117, 117, 117, 1);
     transform: scale(0.96);
-}
+} */
 
 #bookDetails {
 
@@ -113,17 +108,22 @@ main{
     height: 500px;
     
 }
-aside{
+/* aside{
     float: right;
-    /* border: 1px solid rgb(92, 89, 89); */
     height: 500px;
-    width: 20%;
-    margin: 20px 10px 0 0;
-    border-radius: 10px;
+    /* width: 20%; */
+    /* margin: 20px 10px 0 0; */
+    /* border-radius: 10px;
     box-shadow: 0 0 5px black;
-    background-color: rgb(253, 249, 205);
+    background-color: rgb(253, 249, 205); 
+} */
+aside #addImg{
+    width: 300px;
+    height: 500px;
+    margin: -650px 30px 0 0;
+    float: right;
 }
-aside h3{
+/* aside h3{
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -149,15 +149,17 @@ aside #motivation{
 aside #sponsorHead{
     font-weight: bolder;
     font-size: large;
-}
+} */
 
 #bookName {
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 45px;
     color: #fca311ff;
     margin-bottom: 30px;
+    margin-top: -35px;
+    width: 580px;
 }
 
 #authorName {
@@ -174,14 +176,17 @@ aside #sponsorHead{
 }
 
 #bookDisc {
-    margin-top: 50px;
+    margin-top: 100px;
     text-indent: 50px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 1.5;
     width: 450px;
     text-align: justify;
+    height: 270px;
 }
+
+
 
 #submit,#read {
     /* display: block; */
@@ -232,14 +237,7 @@ aside #sponsorHead{
 #submit::after {
     background-color: yellow;
     border-radius: 3rem;
-    /* contenbt: ''; */
     width: 100%;
-    /* display: block;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0; */
-    /* transform: translate(-100%, 0), rotate(10deg); */
     transform-origin: top left;
     transition: .2s;
     transform: ease-out;
@@ -296,22 +294,20 @@ aside #sponsorHead{
 }
 
 #avilable h2 {
-    color: white;
+    color: #fca311ff;
     margin: 20px;
     padding: 50px 0 30px 0;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 30px;
-    text-shadow: 0 0 5px orange;
     text-transform: capitalize;
 }
 
 
 
 #recommended {
-    /* width: max-content; */
-    margin: 0px 20px;
+    margin: 0px 155px;
     overflow: hidden;
     height: 315px;
     max-width: 1350px;
@@ -334,8 +330,8 @@ aside #sponsorHead{
     margin-top: -13px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 1260px;
-    margin-left: 35px;
+    width: 1005px;
+    margin-left: 170px;
 }
 
 #recommended img:hover {
