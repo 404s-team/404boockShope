@@ -56,3 +56,4 @@ if (event.target != filterNav){
     mainRender();
 }
 }
+
