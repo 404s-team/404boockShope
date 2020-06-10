@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(209, 206, 206);
+
+}
+main{
+    width: 80%;
+    box-shadow: 0 0 20px rgb(32, 32, 32);
+    font-family: cursive;
+    background-color:white;
+    max-height: min-content;
+}
+#favorite{
+    
+    margin: 0 auto;
+    /* border: 2px solid black; */
+    width: max-content;
+    /* height: min-content; */
+    
+}
+/* imgs --------- */
+.fav{
+    width: 200px;
+    height: 250px;
+    margin: 100px 0 20px 40px;
+    box-shadow:10px 10px 10px gray;
+    border-radius: 5px;
+}
+/* ----------- */
+#favorite thead{
+    font-weight: bolder;
+    font-size: larger;
+    
+    
+    
+}
+#favorite tr{
+    
+    border-bottom:2px solid gray;
+}
+#favorite tr td:nth-child(2),td:nth-child(3){
+    vertical-align: middle;
+    text-align: center;
+    text-shadow:0 0 3px gray;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 30px 100px;
+
+}
+/* ------------buttons */
+.btnTd{
+    background-color:orange;
+    width: 150px;
+    box-shadow: 0 0 5px black;
+    color: #14213dff;
+    padding: 15px 15px;
+    font-size: large;
+    font-weight: bold;
+}

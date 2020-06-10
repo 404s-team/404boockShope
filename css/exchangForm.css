@@ -38,15 +38,13 @@ legend {
     width: fit-content;
     position: absolute;
     display: inline-block;
-    margin-left: 500px;
-    margin-top: -604px;
+    margin-left: 488px;
+    margin-top: 12px;
 }
 
 #exchangeForm {
     display: inline-block;
-    margin-top: 7%;
-    margin-left: 12%;
-    height: 1000px;
+    height: 655px;
 }
 
 #divMain {
@@ -132,7 +130,6 @@ legend {
 .file-custom {
     position: absolute;
     margin-top: 30px;
-    top: 0;
     right: 0;
     left: 0;
     z-index: 5;
@@ -140,10 +137,28 @@ legend {
     padding: .5rem 1rem;
     line-height: 1.5;
     color: #555;
-    background-color: #fff;
+    /* background-color: #fff; */
     border: .075rem solid #fca311ff;
-    border-radius: .25rem;
-    box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
+    border-radius: 1.25rem;
+    box-shadow: inset 0 0rem 0.4rem rgba(0, 0, 0, .05);
+    margin-top: -10px;
+    margin-left: -71px;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    line-height: 590px;
+}
+
+#choosed #choosedImg{
+    margin-left: -71px;
+    margin-top: -9px;
+    width: 400px;
+    border-radius: 20px;
+    height: 615px;
+}
+#choosedImg{
+    width: 432px;
+    height: 652px;
 }
 
 .file-custom:after {
@@ -155,7 +170,6 @@ legend {
 
 .file-custom:before {
     position: absolute;
-    /* top: -.075rem; */
     right: -.075rem;
     bottom: -.075rem;
     z-index: 6;
@@ -166,10 +180,25 @@ legend {
     line-height: 1.5;
     color: white;
     background-color: #14213dff;
-    border: .075rem solid #fca311ff;
-    border-radius: 0 .25rem .25rem 0;
+    border: 0.075rem solid #fca311ff;
+    border-radius: 8 0.25rem .25rem 23;
     font-family: 'Roboto', sans-serif;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
     font-weight: normal;
+    width: 400px;
+    line-height: 30px;
+    height: 25px;
+    text-align: center;
+}
+
+.file-custom:hover:before{
+    background-color: #fca311ff;
+}
+
+aside{
+    float: right;
+    margin-top: -105px;
 }
 
 /* animating the submit button */
@@ -185,10 +214,11 @@ legend {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     border: none;
-    margin-left: 90px;
+    /* margin-left: 90px; */
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 97px;
 
 }
 
@@ -200,7 +230,7 @@ legend {
 
 #bookde {
     position: relative;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 #ad {
@@ -217,7 +247,7 @@ legend {
 .buy {
     position: absolute;
     margin-left: 10px;
-    margin-top: 100px;
+    margin-top: -510px;
     width: 100px;
     height: 40px;
     color: white;
