@@ -9,7 +9,10 @@ function Book(name, author, imgPath, price, type, description,id) {
     this.bookType = type;
     this.bookDescription = description;
     this.bookId = id;
+    this.click=0
+    // Book.all.push(this);
 }
+
 var booksArr = [
     /**hurror */
     ['The Perfect Wife','Blake Pierce','bookCovers/hororBooks/ThePerfectWife.jpg','1$','hurror','Criminal profiler in training (and newlywed) Jessie Hunt, 29, discovers that dark secrets lurk in her new suburban town; when a body turns up dead, she finds herself caught in the crosshairs of her newfound friends, her husband’s secrets, her serial killer caseload—and the secrets of her own dark past.','1'],
@@ -86,7 +89,12 @@ function addBooks(){
         );
         Book.all.push(book);
     }
+    if(!JSON.parse(localStorage.getItem('AllBooks'))){
+        localStorage.setItem('AllBooks', JSON.stringify(Book.all));
+    };
+
 }
+
 function mainRender(){
     if (bookTypeVar == null || bookTypeVar == undefined){
         bookTypeVar = 'all';
