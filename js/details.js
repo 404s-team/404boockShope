@@ -97,19 +97,14 @@ function imgClickHandler(event) {
     var clickedBook;
     var totalClickedBooks=JSON.parse(localStorage.getItem('totalClickedBooks'))||[];
     console.log('totalClickedBooks: '+totalClickedBooks)
+    
     if (event.target != recommendedContainer) {
         if (event.target.id && trans == 'download') {
-
-            clickedBook = Book.all[(event.target.id) - 1];
-
+            var allBook=JSON.parse(localStorage.getItem('AllBooks'));
+            clickedBook = allBook[(event.target.id) - 1];
             clickedBook.click++;
-            // totalClickedBooks.push(clickedBook);
-            // localStorage.setItem('totalClickedBooks', JSON.stringify(totalClickedBooks))
-            console.log(clickedBook);
-            
-            // console.log( 'clic'+clickedBook.clicks);
-            
-            
+            localStorage.setItem('AllBooks', JSON.stringify(allBook));
+         
         }else{
             arrtoBooks(JSON.parse(localStorage.getItem('ExBooks')))
             clickedBook= exchagBooksArr[(event.target.id) - 1];
