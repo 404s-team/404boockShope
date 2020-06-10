@@ -13,6 +13,7 @@ function imgClickHandler(event){
         if(event.target.id){
             console.log(event.target.id);
         clickedBook = Book.all[(event.target.id)-1]
+        clickedBook.click++;
     }
 }
 console.log(clickedBook)
