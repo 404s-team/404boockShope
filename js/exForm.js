@@ -10,7 +10,7 @@ function uploadImg(even){
     reader.readAsDataURL(event.target.files[0]);
 }
 // uncomment to get the values
-// var btnSubmit = document.querySelector('.sub');
+var btnSubmit = document.querySelector('.sub');
 btnSubmit.addEventListener('click', addExBook);
 
 function addExBook(e) {
