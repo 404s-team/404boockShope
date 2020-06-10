@@ -24,7 +24,7 @@ function addExBook(e) {
     var bookImg = URL.createObjectURL(document.getElementById('imageHolder').files[0]);
 
     var newExBook = new Book(bookName, bookAuther, output.src, '0', 'exchange', bookDisc, 'NewBook');
-    var newExBookArray=[bookName,bookAuther, bookImg, '0', 'exchange', bookDisc, 'NewBook']
+    var newExBookArray=[bookName,bookAuther, output.src, '0', 'exchange', bookDisc, 'NewBook']
     console.log('test'+document.getElementById('imageHolder').files[0].path);
 
     // var url = "details.html";

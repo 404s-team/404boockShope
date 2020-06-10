@@ -63,6 +63,7 @@ function storExBooks(){
         );
         arrExBooksList.push(book);
     }
+
     localStorage.setItem('ExBooks',JSON.stringify(arrExBooksList));
 }
 var img ;
