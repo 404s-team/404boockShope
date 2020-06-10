@@ -13,17 +13,10 @@
 
 <body>
     <header id="hero">
-        <!-- <nav>
-            <img src="http://www.newdesignfile.com/postpic/2009/04/flat-book-icon-vector_82132.png" alt="">
-            <h1>Book Store</h1>
-            <input type="text" placeholder="Search for books...">
-            <a href="index.html">Home</a>
-        </nav> -->
         <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
         <h1 class="h1header"><a href="index.html">Books Shelves</a></h1>
         <nav class="topHeader">
-            <!-- <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
-            <a href="index.html"><h1 class="h1">Shelves of Books</h1></a> -->
+
             <div class="topBotomBordersOut">
                 <ul class="headerList">
                     <li><a href="index.html">home</a></li>
@@ -42,88 +35,51 @@
                 </ul>
         </nav>
         </div>
-        <!-- <nav class="topHeader">
-            <a href="index.html"><img src="img/logo.png" alt="" class="logo"></a>
-            <a href="index.html"><h1>Shelves of Books</h1></a>
-            <ul class="headerList">
-                <li><a href="">home</a></li>
-                <div class="dropdown">
-                    <li class="dropbtn">Categories</li>
-                    <div class="dropdown-content">
-                    <a href="#">All</a>
-                    <a href="#">History</a>
-                    <a href="#">Horror</a>  
-                    <a href="#">Fantacy</a>  
-                    <a href="#">Kids</a>
-                    </div>
-                  </div>
-                <li><a href="" class="drop">Exchange</a></li>
-                <li><a href="">about</a></li>
-            </ul>
-        </nav> -->
     </header>
     <main>
         <form id="exchangeForm" action="" method="post">
             <fieldset>
-                <legend></legend>
+                <legend>upload book image here:</legend>
                 <div id="divMain">
-                    <!-- <div id="divChoosed"> -->
-                        <img id="choosedImg" src="https://placehold.it/300x400/ttt" alt="">
-                        
-                    <!-- </div>  -->
+
+                    <img id="choosedImg" src="https://placehold.it/400x600/ttt" alt="">
+
                     <div id="inputs">
-                        <input class="userData" placeholder="Your Name" id="userName" type="text" name="" id="">
-                        <input class="userData" placeholder="Email" id="Email" type="text" name="" id="">
-                        <input class="userData" placeholder="Book Name" id="BookName" type="text" name="" id="">
-                        <input  class="userData" placeholder="Auther Name" id="auther" type="text" name="" id="">
-                        <!-- <input class="userData" placeholder="Discreption" id="BookDisc" type="text" name="" id=""> -->
-                        <textarea id="BookDisc" name="" id="" cols="30" rows="10"></textarea>
+                        <input class="userData" placeholder="Your Name" id="userName" type="text" required>
+                        <input class="userData" placeholder="Email" id="Email" type="email" required>
+
+                        <div id="bookde">
+                            <input class="userData" placeholder="Book Name" id="BookName" type="text" required>
+                            <input class="userData" placeholder="Auther Name" id="auther" type="text" required>
+                            <textarea class="userData" id="BookDisc" placeholder="Book Discription..." cols="30"
+                                rows="10" required></textarea>
+                        </div>
+                        <button class="sub">
+                            submit
+                        </button>
                     </div>
+
                 </div>
-                <!-- <input onchange="loadFile(event)" id="imageHolder" type="file" id="img" name="img" accept="image/*"> -->
+
                 <label class="file">
                     <input onchange="loadFile(event)" id="imageHolder" id="img" name="img" accept="image/*" type="file"
                         id="file" aria-label="File browser example">
                     <span class="file-custom"></span>
                 </label>
-                <!-- <script>
-                    var loadFile = function (event) {
-                        var image = document.getElementById('choosedImg');
-                        image.src = URL.createObjectURL(event.target.files[0]);
-                        image.style.width = '300px';
-                        image.style.height = '400px';
-                    };
-                </script> -->
-                <!-- <button id="btnSubmit" class="hvr-icon-up">Submit <i
-                        class="fa fa-arrow-circle-o-up hvr-icon"></i></button> -->
-                <div class="btnSubmit">
-                    <div class="container">
-                        <div class="tick">
-                        </div>
-                    </div>
-                </div>
 
 
             </fieldset>
+
         </form>
+
+        <div id="ad">
+            <button class="buy">Buy Now!</button>
+            <img src="img/Ad1_3060.jpg" alt=""></div>
 
     </main>
 
     <footer>
-        <!-- <nav id="navFooter">
-            <div id="divFooterLogo">
-                <img id='Footerlogo' src="https://placehold.it/200x70/ttt" />
-            </div>b
-            <div id="divFooterLinks">
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-            </div>
-            <div id="divSocialMedia">
-                <img class="socialMedia" src="https://github.com/AhmedShela/chocolatePizza/blob/master/images/fb-icon.png?raw=true" alt="">
-                <img class="socialMedia" src="https://github.com/AhmedShela/chocolatePizza/blob/master/images/insta-icon.png?raw=true" alt="">
-                <img class="socialMedia" src="https://github.com/AhmedShela/chocolatePizza/blob/master/images/twit-icon.png?raw=true" alt="">
-            </div>
-        </nav> -->
+
         <a href="index.html"><img id='Footerlogo' src="img/logo.png" /></a>
         <h3><a href="index.html">Books Shelves</a></h3>
         <nav class="links">
