@@ -1,31 +1,27 @@
 /********Maim/*/
-#userName,
-#Email,
-#BookName,
-#auther {
+.userData {
     display: block;
     margin-bottom: 20px;
-    width: 140%;
+    width: 95%;
     height: 35px;
-    border-radius: 30px;
+    border-radius: 8px;
     border: solid gray;
     padding-left: 15px;
     outline: 0;
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+
 }
 
 #choosedImg {
     margin-right: 40px;
 }
 
-#btnSubmit {
-    position: relative;
-    clear: both;
-    width: 150px;
-    height: 40px;
-    left: 85px;
-    top: 20px;
-
-}
+/*  */
 
 #BookDisc {
     width: 300px;
@@ -37,19 +33,12 @@
 
 #inputs {
     width: fit-content;
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 0px;
+    margin-left: 500px;
+    margin-top: -604px;
 }
 
-/* #divChoosed{
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    background-color: gray;
-    margin-right: 50px;
-    float: left;
-} */
 #exchangeForm {
     display: inline-block;
     margin-top: 7%;
@@ -63,10 +52,6 @@
 
 #imageHolder {
     display: inline;
-}
-
-fieldset {
-    /* margin: 0 auto; */
 }
 
 @-webkit-keyframes hvr-icon-up {
@@ -131,7 +116,7 @@ fieldset {
     display: inline-block;
     cursor: pointer;
     height: 2.5rem;
-    margin-left: 33px;
+    margin-left: 70px;
 }
 
 .file input {
@@ -143,23 +128,19 @@ fieldset {
 
 .file-custom {
     position: absolute;
-    margin-top: 30px    ;
+    margin-top: 30px;
     top: 0;
     right: 0;
     left: 0;
     z-index: 5;
-    height: 2.5rem;
+    height: 1.5rem;
     padding: .5rem 1rem;
-    line-height: 2.5;
+    line-height: 1.5;
     color: #555;
     background-color: #fff;
     border: .075rem solid #fca311ff;
     border-radius: .25rem;
     box-shadow: inset 0 .2rem .4rem rgba(0, 0, 0, .05);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .file-custom:after {
@@ -177,61 +158,72 @@ fieldset {
     z-index: 6;
     display: block;
     content: "UPLOAD";
-    height: 2.5rem;
+    height: 1.5rem;
     padding: .5rem 1rem;
-    line-height: 2.5;
-    color: #fca311ff;
+    line-height: 1.5;
+    color: white;
     background-color: #14213dff;
     border: .075rem solid #fca311ff;
     border-radius: 0 .25rem .25rem 0;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* animating the submit button */
 
 
-.btnSubmit,
-.tick {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    /* font-weight: normal; */
-
-}
-
-
-.btnSubmit {
-    width: 200px;
+.sub {
+    width: 130px;
     height: 40px;
-    background: #fca311ff;
-    border-radius: 6px;
-    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
-    margin-left: 400px;
-    border-radius: 10rem;
-    font-size: 10px;
-}
-
-.btnSubmit svg {
-    transform: rotate(0);
-    transition: all .5s;
-}
-
-.btnSubmit__circle {
-    width: 50px;
-    height: 50px;
-    background: #fca311ff;
-    border-radius: 50%;
-    margin-left: 465px;
-}
-
-.btnSubmit:hover {
-    cursor: pointer;
-}
-
-.tick {
     color: white;
-    font-size: 2em;
-    transition: all .9s;
+    background: #fca311ff;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    margin-left: 90px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.sub:hover {
+    background-color: #14213dff;
+    color: #fff;
+}
+
+
+#bookde {
+    position: relative;
+    margin-top: 40px;
+}
+
+#ad {
+    height: 600px;
+    width: 300px;
+    margin-left: 1250px;
+    margin-top: -620gipx;
+}
+
+#ad img {
+    height: 400px;
+}
+
+.buy {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 100px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: #fca311ff;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
 }
