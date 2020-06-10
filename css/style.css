@@ -93,7 +93,7 @@ background-color: gray;
     position: relative;
     margin: auto;
 }
-.h1 a{
+.h1header a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -414,7 +414,7 @@ background-color: gray;
     margin: 10px 50px;
 }
 
-#hero .h1 {
+#hero .h1header {
     margin-top: -58px;
     margin-left: 130px;
     font-size: 30px;
@@ -489,6 +489,10 @@ background-color: gray;
 }
 
 /************main************/
+#topbanner{
+    width: 100%;
+    margin-top: 300px;
+}
 
 #navHeader
 {
@@ -557,10 +561,13 @@ background-color: gray;
     position: relative;
     height: 485px;
     width: 50%;
-    background-color: #f3f3f3;
-    margin-top: 38%;
-    left: 25%;
+    /* background-color: #f3f3f3; */
+    /* margin-top: 38%; */
+    /* left: 25%; */
     overflow-y: hidden;
+    padding: 0 382px;
+    margin-top: -275px;
+    margin-bottom: -65px;
 }
 
 .devBestBook {
