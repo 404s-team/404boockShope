@@ -494,11 +494,10 @@ background-color: gray;
     margin-top: 300px;
 }
 
-#navHeader
-{
+#navHeader {
     background-color: #14213dff;
     height: 80px;
-    width: 1345px;
+    width: 1348px;
     float: none;
     margin: 45px 85px;
     margin-bottom: 10px;
@@ -640,7 +639,7 @@ background-color: gray;
 
 .bookName {
     font-family: 'Roboto', sans-serif;
-    font-size: 115%;
+    font-size: 108%;
     font-weight: bold;
     margin: 5% 5px;
 }
