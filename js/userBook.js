@@ -16,12 +16,20 @@ function renderUserBooks(){
         divDetails.setAttribute('class','userBookDetails')
         var bookName = document.createElement('p');
         var bookAuther = document.createElement('p');
+        var bookDisc = document.createElement('p');
         divDetails.appendChild(bookName);
         divDetails.appendChild(bookAuther);
+        divDetails.appendChild(bookDisc);
         bookName.setAttribute('class','userBookName');
         bookAuther.setAttribute('class','userBookAuther');
+        bookDisc.setAttribute('class','userBookDisc');
         bookName.textContent = books[i].bookName;
         bookAuther.textContent = books[i].bookauthor;
+        bookDisc.textContent = books[i].bookDescription;
+
+        var shelf = document.createElement('div');
+        container.appendChild(shelf)
+        shelf.setAttribute('class','bookStander')
     }
 }
 renderUserBooks();
