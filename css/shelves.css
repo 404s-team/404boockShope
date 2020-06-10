@@ -185,20 +185,7 @@ aside #sponsorHead{
     height: 270px;
 }
 
-.round #favorite{
-    height: 40px;
-    width: 40px;
-    border-radius: 8px;
-    background-color: #14213dff;
-    margin: 55px 0;
-    border: none;
-}
-.round #favorite:hover{
-    height: 30px;
-    width: 30px;
-    background-color: #fca311ff;
-    margin: 60px 0;
-}
+
 
 #submit,#read {
     /* display: block; */
@@ -237,7 +224,7 @@ aside #sponsorHead{
     width: 130px;
     height: 40px;
     line-height: 40px;
-    margin: 55px 18px;
+    margin: 55px 0px;
     position: relative;
     overflow: hidden;
     background-color: #fca311ff;
@@ -281,10 +268,9 @@ aside #sponsorHead{
     font-size: 30px;
     text-transform: capitalize;
 }
-
-
-
-#recommended {
+/**************/
+.recommended {
+    display: flex;
     margin: 0px 155px;
     overflow: hidden;
     height: 315px;
@@ -293,11 +279,11 @@ aside #sponsorHead{
     white-space: nowrap;
 }
 
-#recommended:hover {
+.recommended:hover {
     overflow-x: auto;
 }
 
-#recommended img {
+.recommended img {
     margin: 10px 30px;
     height: 300px;
     width: 200px;
@@ -312,7 +298,7 @@ aside #sponsorHead{
     margin-left: 170px;
 }
 
-#recommended img:hover {
+.recommended img:hover {
     border-radius: 5%;
     box-shadow: 5px 1px 5px 0px rgba(117, 117, 117, 1);
     transform: scale(0.96);

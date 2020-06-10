@@ -19,6 +19,9 @@ legend {
 
 #choosedImg {
     margin-right: 40px;
+    width: 400px;
+    height: 600px;
+
 }
 
 /*  */
@@ -42,6 +45,7 @@ legend {
 #exchangeForm {
     display: inline-block;
     height: 655px;
+    width: 432px;
 }
 
 #divMain {

@@ -1,37 +1,46 @@
-body{
+/* body{
     background-color: rgb(209, 206, 206);
 
-}
+} */
 main{
-    width: 80%;
-    box-shadow: 0 0 20px rgb(32, 32, 32);
-    font-family: cursive;
-    background-color:white;
+    font-family: 'Roboto', sans-serif;
     max-height: min-content;
 }
 #favorite{
+    margin: 100px 33px;
+    width: 95%;
+    background-color: #f5f5f5;
+    box-shadow: 5px 1px 10px #14213dff;
     
-    margin: 0 auto;
-    /* border: 2px solid black; */
-    width: max-content;
-    /* height: min-content; */
-    
+}
+.tabhead{
+    height: 80px;
+    width: 1000px;
+    line-height: 4;
 }
 /* imgs --------- */
 .fav{
     width: 200px;
-    height: 250px;
-    margin: 100px 0 20px 40px;
-    box-shadow:10px 10px 10px gray;
+    height: 300px;
+    margin: 50px 100px;
+    box-shadow: 5px 1px 10px grey;
     border-radius: 5px;
 }
 /* ----------- */
-#favorite thead{
+.tabhead h1{
+    color: #14213dff;
+    font-size: 30px;
     font-weight: bolder;
-    font-size: larger;
-    
-    
-    
+    font-family: 'Roboto', sans-serif;
+    margin-left: -125px;
+}
+.para{
+    margin: 0 -25px;
+    width: 200px;
+    color: #14213dff;
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
 }
 #favorite tr{
     
@@ -48,13 +57,11 @@ main{
 }
 /* ------------buttons */
 .btnTd{
-    background-color:orange;
-    width: 150px;
-    box-shadow: 0 0 5px black;
-    color: #14213dff;
-    padding: 15px 15px;
-    font-size: large;
-    font-weight: bold;
+    background-color: #fca311ff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: -100px;
 }
 #myChart{
     /* margin: 80px; */
@@ -62,4 +69,9 @@ main{
     /* padding: -20px; */
     /* width: 100px; */
     /* height: 50%; */
+}
+.btnTd:hover{
+    background-color: #14213dff;
+    width: 70px;
+    height: 70px;
 }
