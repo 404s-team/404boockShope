@@ -160,3 +160,18 @@ document.getElementById('Fantasi').addEventListener('click',function navFilter()
 document.getElementById('Kids').addEventListener('click',function navFilter(){
     changeFilter('Kids');
 });
+
+
+//CONSTRUCTOR for favorite
+var Favoraite = function (name, imgPath) {
+    this.name = name;
+    this.imgPath = imgPath
+    Favoraite.all.push(this);
+}
+Favoraite.all = [];
+
+Favoraite.prototype.saveToLocalStorage = function () {
+
+    localStorage.setItem('favorite', JSON.stringify(Favoraite.all));
+
+};
