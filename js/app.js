@@ -12,7 +12,7 @@ function imgClickHandler(event) {
     if (event.target != container) {
         if (event.target.id) {
             // console.log(event.target.id);
-            clickedBook = allBook[(event.target.id) - 1];
+            clickedBook = allBook[Number((event.target.id)) - 1];
             clickedBook.click++;
             localStorage.setItem('AllBooks', JSON.stringify(allBook));
         }
