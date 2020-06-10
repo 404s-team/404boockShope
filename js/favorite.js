@@ -22,15 +22,18 @@ function loadFav() {
 
         var cellEl2 = document.createElement('td');
         rowEl.appendChild(cellEl2);
-        cellEl2.textContent = allFavoraite[index].name;
+        var name = document.createElement('p');
+        cellEl2.appendChild(name);
+        name.setAttribute('class','para')
+        name.textContent = allFavoraite[index].name;
 
         var cellEl3 = document.createElement('td');
         rowEl.appendChild(cellEl3);
-        btnTd = document.createElement('input')
+        btnTd = document.createElement('img')
         cellEl3.appendChild(btnTd);
         btnTd.setAttribute('class', 'btnTd');
         btnTd.setAttribute('type', 'button');
-        btnTd.setAttribute('value', 'Remove');
+        btnTd.setAttribute('src', 'img/delete.png');
     };
 };
 
