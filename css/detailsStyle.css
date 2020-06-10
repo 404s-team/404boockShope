@@ -229,31 +229,6 @@ aside #sponsorHead{
     transition: color .5s;
 }
 
-#submit::after {
-    background-color: yellow;
-    border-radius: 3rem;
-    /* contenbt: ''; */
-    width: 100%;
-    /* display: block;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0; */
-    /* transform: translate(-100%, 0), rotate(10deg); */
-    transform-origin: top left;
-    transition: .2s;
-    transform: ease-out;
-    will-change: transform;
-}
-.round .submit:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: #fca311ff;
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-}
 
 .round .submit:hover {
     background-color: #14213dff;
@@ -261,30 +236,13 @@ aside #sponsorHead{
 }
 
 
-.round .submit:before {
-    left: -30px;
-    bottom: 100%;
-    transition: all .7s;
-}
 
-#submit:hover {
-    border: 2px solid transparent;
-    color: #14213dff;
-    transform: scale(1.05);
-    will-change: transform;
-
-}
 #read:hover {
     border: 2px solid transparent;
     color: #14213dff;
     transform: scale(1.05);
     will-change: transform;
 }
-.round .submit:hover:before {
-    bottom: -50px;
-}
-
-
 
 
 #avilable {
